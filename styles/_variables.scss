@@ -1,3 +1,27 @@
 $primary-color:#9356DC;
 $secondary-color:#FF79DA;
 $tertiary-color:#99E2D0;
+$bg-color: #f2f2f2;
+$screen:768px;
+
+%textes-dimension {
+  width: auto;
+  height: 30px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: $bg-color;
+  margin-bottom: 20px;
+  >a{
+    text-decoration: none;
+  }
+}
+%btn{
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 40px;
+  background:linear-gradient($secondary-color,$primary-color);
+  text-align: center;
+  color: white;
+}

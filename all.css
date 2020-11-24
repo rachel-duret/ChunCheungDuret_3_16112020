@@ -1,3 +1,111 @@
+.indicator__element {
+  width: auto;
+  height: 30px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  margin-bottom: 20px; }
+  .indicator__element > a {
+    text-decoration: none; }
 
+.banner__btn--size {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  text-align: center;
+  color: white; }
+
+@media all and (max-width: 768px) {
+  body {
+    padding: 0px;
+    margin: 10px; } }
+
+.logo {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  padding: 10px; }
+  .logo img {
+    text-align: center;
+    width: 200px;
+    height: auto;
+    margin: 0 auto; }
+
+.banner {
+  background-color: #f2f2f2; }
+  .banner__search {
+    border: 1px solid #f2f2f2;
+    background-color: #d9d9d9;
+    box-shadow: 2px 0px 5px rgba(242, 242, 242, 0.5);
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+    height: 30px;
+    padding-top: 10px;
+    margin: 0; }
+    .banner__search--input {
+      border: none;
+      background-color: #d9d9d9; }
+  .banner__title {
+    white-space: pre;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center; }
+  .banner__description {
+    font-size: 0.8em;
+    font-weight: lighter;
+    text-align: center; }
+  .banner__btn {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    padding-bottom: 50px; }
+
+.indicator {
+  margin-left: 20px; }
+  .indicator__element > span {
+    display: inline-block;
+    position: relative;
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background: #9356DC;
+    border-radius: 50%; }
+  .indicator__element > i {
+    display: inline-block;
+    padding-left: 20px; }
+
+#restaurants {
+  margin-left: 20px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.restaurant-container {
+  max-width: 768px;
+  height: auto;
+  border-radius: 20px;
+  margin: 30px; }
+  .restaurant-container__img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 0; }
+    .restaurant-container__img img {
+      width: 100%;
+      height: 200px;
+      border-radius: 20px 20px 0px 0px; }
+  .restaurant-container__texts {
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    padding: 20px;
+    margin-top: 0; }
+  .restaurant-container__texts a {
+    text-decoration: none; }
 
 /*# sourceMappingURL=all.css.map */

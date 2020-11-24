@@ -1,0 +1,10 @@
+@mixin phone-width {
+  @media all and (max-width: $screen) {
+    @content
+  }
+}
+@mixin pc-width{
+  @media all and (min-width: $screen) {
+    @content
+  }
+}
