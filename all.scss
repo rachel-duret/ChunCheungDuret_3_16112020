@@ -113,3 +113,49 @@ margin-left: 20px;
     text-decoration: none;
   }
 }
+.la-francaise{
+  max-width: 780px;
+  background-position:left 60px;
+  background-image: url(" ./images-origin/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  &__header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+  }
+  &__header i{
+    color: black;
+  }
+  &__header--img{
+    width: 30%;
+    height: 30px;
+  }
+}
+.menu{
+  background-color: $bg-color;
+  margin-top: 55%;
+  border-radius: 50px 50px 0px 0px;
+  padding: 20px;
+  & h1{
+    font-weight:bolder;
+  }
+  &__entree{
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    line-height: 1em;
+  }
+  &__entree--box{
+    display:flex ;
+    justify-content: space-between;
+    vertical-align: top;
+    padding:0px 20px 0px 20px;
+  }
+  & h2{
+    padding: 20px 0px 0px 20px;
+    margin: 0;
+  }
+}

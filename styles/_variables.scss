@@ -5,11 +5,11 @@ $bg-color: #f2f2f2;
 $screen:768px;
 
 %textes-dimension {
-  width: auto;
+  width: 100%;
   height: 30px;
   padding: 10px;
   border-radius: 20px;
-  background-color: $bg-color;
+  background-color: white;
   margin-bottom: 20px;
   >a{
     text-decoration: none;
