@@ -8,7 +8,7 @@
   .indicator__element > a {
     text-decoration: none; }
 
-.banner__btn--size {
+.btn__size, .commander-btn {
   width: 200px;
   height: 40px;
   padding: 10px;
@@ -58,11 +58,14 @@
     font-size: 0.8em;
     font-weight: lighter;
     text-align: center; }
-  .banner__btn {
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    padding-bottom: 50px; }
+
+.btn {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  padding-bottom: 50px; }
+  .btn__size {
+    cursor: pointer; }
 
 .indicator {
   margin-left: 20px; }
@@ -124,27 +127,30 @@
     width: 30%;
     height: 30px; }
 
-.menu {
+.restro {
   background-color: #f2f2f2;
   margin-top: 55%;
   border-radius: 50px 50px 0px 0px;
   padding: 20px; }
-  .menu h1 {
+  .restro h1 {
     font-weight: bolder; }
-  .menu__entree {
+  .restro__menu {
     margin-bottom: 20px;
     width: 100%;
     height: auto;
     background-color: white;
     border-radius: 20px;
     line-height: 1em; }
-  .menu__entree--box {
+  .restro__menu--box {
     display: flex;
     justify-content: space-between;
     vertical-align: top;
     padding: 0px 20px 0px 20px; }
-  .menu h2 {
+  .restro h2 {
     padding: 20px 0px 0px 20px;
     margin: 0; }
+
+.commander-btn {
+  text-align: center; }
 
 /*# sourceMappingURL=all.css.map */
