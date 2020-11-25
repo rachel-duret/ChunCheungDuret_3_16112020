@@ -90,9 +90,7 @@ margin-left: 20px;
   height: auto;
   border-radius: 20px;
   margin: 30px;
-
-
-
+  line-height: 1.2em;
   &__img{
     width: 100%;
     height: auto;
@@ -109,6 +107,8 @@ margin-left: 20px;
     border-radius: 0px 0px 20px 20px;
     padding: 20px;
     margin-top:0;
+    font-weight: bolder;
+    font-size: 1.1em;
   }
   &__texts a{
     text-decoration: none;
@@ -133,6 +133,66 @@ margin-left: 20px;
     height: 30px;
   }
 }
+.l-enchantee{
+  max-width: 780px;
+  background-position:left 60px;
+  background-image: url(" ./images-origin/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  &__header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+  }
+  &__header i{
+    color: black;
+  }
+  &__header--img{
+    width: 30%;
+    height: 30px;
+  }
+}
+.la-palette{
+  max-width: 780px;
+  background-position:left 60px;
+  background-image: url(" ./images-origin/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  &__header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+  }
+  &__header i{
+    color: black;
+  }
+  &__header--img{
+    width: 30%;
+    height: 30px;
+  }
+}
+.le-delice{
+  max-width: 780px;
+  background-position:left 60px;
+  background-image: url(" ./images-origin/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  &__header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+  }
+  &__header i{
+    color: black;
+  }
+  &__header--img{
+    width: 30%;
+    height: 30px;
+  }
+}
+
+
+
 .restro{
   background-color: $bg-color;
   margin-top: 55%;
@@ -147,7 +207,7 @@ margin-left: 20px;
     height: auto;
     background-color: white;
     border-radius: 20px;
-    line-height: 1em;
+    line-height: 1.2em;
   }
   &__menu--box{
     display:flex ;
@@ -158,9 +218,6 @@ margin-left: 20px;
   & h2{
     padding: 20px 0px 0px 20px;
     margin: 0;
+    font-size: 1.2em;
   }
-}
-.commander-btn{
-  @extend %btn;
-  text-align: center;
 }

@@ -8,7 +8,7 @@
   .indicator__element > a {
     text-decoration: none; }
 
-.btn__size, .commander-btn {
+.btn__size {
   width: 200px;
   height: 40px;
   padding: 10px;
@@ -93,7 +93,8 @@
   max-width: 768px;
   height: auto;
   border-radius: 20px;
-  margin: 30px; }
+  margin: 30px;
+  line-height: 1.2em; }
   .restaurant-container__img {
     width: 100%;
     height: auto;
@@ -107,7 +108,9 @@
     background-color: white;
     border-radius: 0px 0px 20px 20px;
     padding: 20px;
-    margin-top: 0; }
+    margin-top: 0;
+    font-weight: bolder;
+    font-size: 1.1em; }
   .restaurant-container__texts a {
     text-decoration: none; }
 
@@ -127,6 +130,54 @@
     width: 30%;
     height: 30px; }
 
+.l-enchantee {
+  max-width: 780px;
+  background-position: left 60px;
+  background-image: url(" ./images-origin/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto; }
+  .l-enchantee__header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px; }
+  .l-enchantee__header i {
+    color: black; }
+  .l-enchantee__header--img {
+    width: 30%;
+    height: 30px; }
+
+.la-palette {
+  max-width: 780px;
+  background-position: left 60px;
+  background-image: url(" ./images-origin/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto; }
+  .la-palette__header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px; }
+  .la-palette__header i {
+    color: black; }
+  .la-palette__header--img {
+    width: 30%;
+    height: 30px; }
+
+.le-delice {
+  max-width: 780px;
+  background-position: left 60px;
+  background-image: url(" ./images-origin/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto; }
+  .le-delice__header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px; }
+  .le-delice__header i {
+    color: black; }
+  .le-delice__header--img {
+    width: 30%;
+    height: 30px; }
+
 .restro {
   background-color: #f2f2f2;
   margin-top: 55%;
@@ -140,7 +191,7 @@
     height: auto;
     background-color: white;
     border-radius: 20px;
-    line-height: 1em; }
+    line-height: 1.2em; }
   .restro__menu--box {
     display: flex;
     justify-content: space-between;
@@ -148,9 +199,7 @@
     padding: 0px 20px 0px 20px; }
   .restro h2 {
     padding: 20px 0px 0px 20px;
-    margin: 0; }
-
-.commander-btn {
-  text-align: center; }
+    margin: 0;
+    font-size: 1.2em; }
 
 /*# sourceMappingURL=all.css.map */
