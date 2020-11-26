@@ -1,6 +1,10 @@
 @import "./styles/variables";
 @import "./styles/mixin";
 @import "./styles/extend";
+*{
+  margin: 0;
+  padding: 0;
+}
 body{
   @include phone-width{
     padding: 0px;

@@ -11,119 +11,128 @@
 </head>
 <body>
 <div id="bloc-page">
+    <div id="page-d-accueil">
         <div class="logo">
             <img src="./images/logo/ohmyfood.png" alt="logo" class="logo__img" id="logo"/>
         </div>
-    <div id="banner" class="banner">
-        <form method="post">
-            <div class="banner__search">
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="search" placeholder="Paris, Belleville" class="banner__search--input" id="search"/>
-            </div>
-        </form>
-        <h2 class="banner__title">   Réservez le menu qui <br> vous convient</h2>
-        <p class="banner__description">Découvrez des restaurant d'exception,<br/>séléctionnés par nos soins.</p>
-        <div class="btn">
-            <button class="btn__size">Explorer nos restaurants</button>
+        <div id="banner" class="banner">
+            <form method="post">
+                <div class="banner__search">
+                    <label>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="search" placeholder="Paris, Belleville" autocomplete="off" class="banner__search--input" list="ville" id="search"/>
+                        <datalist id="ville">
+                            <option value="20ARR.">Ménilmontant</option>
+                            <option value="20APP.">Charonne</option>
+                            <option value="19ARR.">Cité Rouge</option>
+                            <option value="11ARR.">Folie-Méricourt</option>
+                        </datalist>
+                    </label>
+                </div>
+                <h2 class="banner__title">   Réservez le menu qui <br> vous convient</h2>
+                <p class="banner__description">Découvrez des restaurant d'exception,<br/>séléctionnés par nos soins.</p>
+                <div class="btn">
+                    <a href="#restaurants">
+                        <input type="submit" value="Explorer nos restaurants" class="btn__size"/>
+                    </a>
+                </div>
+            </form>
         </div>
+        <div class="indicator">
+            <h2 class="indicator__title">Fonctionnement</h2>
+            <div class="indicator__element">
+                <span>1</span>
+                <a href="#restaurants">
+                    <i class="fas fa-mobile-alt"></i>
+                    Choisissez un restaurant
+                </a>
+            </div>
+            <div class="indicator__element" id="composer">
+                <span>2</span>
+                <a href="">
+                    <i class="fas fa-ellipsis-v"></i> <i class="fas fa-bars"></i>
+                    Composez votre menu
+                </a>
+            </div>
+            <div class="indicator__element">
+                <span>3</span>
+                <a href="">
+                    <i class="fas fa-store"></i>
+                    Dégustez au restaurant
+                </a>
+            </div>
+        </div>
+        <div id="restaurants">
+            <h2 class="restaurant__head">Restaurants</h2>
+            <div>
+                <div class="restaurant-container">
+                    <div class="restaurant-container__img">
+                        <a href="#la-palette">
+                            <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"/>
+                        </a>
+                    </div>
+                    <div class="restaurant-container__texts">
+                        <a href="#la-palette">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </a>
+                    </div>
+                </div>
 
+                <div class="restaurant-container">
+                    <div class="restaurant-container__img">
+                        <a href="#l'enchantee">
+                            <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"/>
+                        </a>
+                    </div>
+                    <div  class="restaurant-container__texts">
+                        <a href="#l'enchantee">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="restaurant-container">
+                    <div class="restaurant-container__img">
+                        <a href="#la-francaise">
+                            <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la francaise"/>
+                        </a>
+                    </div>
+                    <div  class="restaurant-container__texts">
+                        <a href="#la-francaise">
+                            <h3>À la française</h3>
+                            <p>Cité Rouge</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="restaurant-container">
+                    <div class="restaurant-container__img">
+                        <a href="#le-delice">
+                            <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens"/>
+                        </a>
+                    </div>
+                    <div  class="restaurant-container__texts">
+                        <a href="#le-delice">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="indicator">
-        <h2 class="indicator__title">Fonctionnement</h2>
-        <div class="indicator__element">
-            <span>1</span>
-            <a href="#restaurants">
-                <i class="fas fa-mobile-alt"></i>
-                Choisissez un restaurant
-            </a>
-        </div>
-        <div class="indicator__element">
-            <span>2</span>
-            <a href="">
-                <i class="fas fa-ellipsis-v"></i> <i class="fas fa-bars"></i>
-                Composez votre menu
-            </a>
-        </div>
-        <div class="indicator__element">
-            <span>3</span>
-            <a href="">
-                <i class="fas fa-store"></i>
-                Dégustez au restaurant
-            </a>
-        </div>
-    </div>
-
-    <div id="restaurants">
-        <h2 class="restaurant__head">Restaurants</h2>
-        <div>
-            <div class="restaurant-container">
-                <div class="restaurant-container__img">
-                    <a href="#la-palette">
-                        <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"/>
-                    </a>
-                </div>
-                <div class="restaurant-container__texts">
-                    <a href="#la-palette">
-                        <h3>La palette du goût</h3>
-                        <p>Ménilmontant</p>
-                    </a>
-                </div>
+    <div id="page-de-menu">
+        <div id="la-francaise" class="la-francaise">
+            <div class="la-francaise__header">
+                <a href="#page-d-accueil"><i class="fas fa-arrow-left"></i></i></a>
+                <img src="./images/logo/ohmyfood.png" alt="logo" class="la-francaise__header--img"/>
             </div>
 
-            <div class="restaurant-container">
-                <div class="restaurant-container__img">
-                    <a href="#l'enchantee">
-                        <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"/>
-                    </a>
-                </div>
-                <div  class="restaurant-container__texts">
-                    <a href="#l'enchantee">
-                        <h3>La note enchantée</h3>
-                        <p>Charonne</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="restaurant-container">
-                <div class="restaurant-container__img">
-                    <a href="#la-francaise">
-                        <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la francaise"/>
-                    </a>
-                </div>
-                <div  class="restaurant-container__texts">
-                    <a href="#la-francaise">
-                        <h3>À la française</h3>
-                        <p>Cité Rouge</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="restaurant-container">
-                <div class="restaurant-container__img">
-                    <a href="#le-delice">
-                        <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens"/>
-                    </a>
-                </div>
-                <div  class="restaurant-container__texts">
-                    <a href="#le-delice">
-                        <h3>Le délice des sens</h3>
-                        <p>Folie-Méricourt</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="la-francaise" class="la-francaise">
-        <div class="la-francaise__header">
-          <a href="#restaurants"><i class="fas fa-arrow-left"></i></i></a>
-            <img src="./images/logo/ohmyfood.png" alt="logo" class="la-francaise__header--img"/>
-        </div>
-
-        <div class="restro">
-            <h1>À la française</h1>
-                <form>
+            <div class="restro">
+                <h1>À la française</h1>
+                <form method="post" action="#composer">
                     <div>
                         <h2 >ENTRÉES</h2>
                         <div class="restro__menu">
@@ -134,7 +143,7 @@
                                 <p> Aux zestes d'orange</p>
                                 <label>
                                     <span> 25€</span>
-                                    <input type="checkbox" name="check" class="checkbox">
+                                    <input type="checkbox" name="entree" class="checkbox">
                                 </label>
                             </div>
                         </div>
@@ -146,7 +155,7 @@
                                 <p>Carotte, panais, topinambour</p>
                                 <label>
                                     <span>35€</span>
-                                    <input type="checkbox" name="check" class="checkbox">
+                                    <input type="checkbox" name="entree" class="checkbox">
                                 </label>
                             </div>
                         </div>
@@ -158,7 +167,7 @@
                                 <p>Revisitée</p>
                                 <label>
                                     <span>20€</span>
-                                    <input type="checkbox" name="check" class="checkbox">
+                                    <input type="checkbox" name="entree" class="checkbox">
                                 </label>
                             </div>
 
@@ -245,451 +254,461 @@
                         </div>
                     </div>
                     <div class="btn">
-                        <input type="button" value="Commander" class="btn__size"/>
+                        <input type="submit" value="Commander" class="btn__size"/>
                     </div>
                 </form>
+            </div>
+        </div>
+        <div id="l'enchantee" class="l-enchantee">
+            <div>
+                <a href="#page-d-accueil"><i class="fas fa-arrow-left"></i></i></a>
+                <img src="./images/logo/ohmyfood.png" alt="logo" class="l-enchantee__header--img"/>
+            </div>
+            <div class="restro">
+                <h1>La note enchantée</h1>
+                <form>
+                    <div>
+                        <h2>ENTRÉES</h2>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Ravioles de foie gras </h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Accompagnés de leur crème à la truffe</p>
+                                <label>
+                                    <span>25€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Caviar osciètre </h2>
+
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Sur blini à la farine de blé noir</p>
+                                <label>
+                                    <span>35€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Homard et espuma de potiron</h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Mariné aux zestes d'orange</p>
+                                <label>
+                                    <span>20€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Foie gras de canard cuit entier</h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Confiture de figue et pain toasté</p>
+                                <label>
+                                    <span>35€</span>
+                                    <input type="checkbox" name="check">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>PLATS</h2>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Noix de coquilles Saint-Jacques</h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Sur lit de purée de céleri-rave</p>
+                                <label>
+                                    <span>40€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Langoustine poêlée</h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Purée de patate douce</p>
+                                <label>
+                                    <span>35€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Mijoté de queue de boeuf </h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Et riz sauvage aux zestes de citron</p>
+                                <label>
+                                    <span>44€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div>
+                        <h2>DESSERTS</h2>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Macaron noisette et chocolat</h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Glace au caramel brun et sel de Guérande</p>
+                                <label>
+                                    <span>18€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Baba au rhum revisité </h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Avec son coulis de citron</p>
+                                <label>
+                                    <span>22€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Tarte au citron meringuée </h2>
+
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Déstructurée</p>
+                                <label>
+                                    <span>23€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="bnt">
+                        <input type="submit" value="Commander" class="btn__size"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="la-palette" class="la-palette">
+            <div>
+                <a href="#page-d-accueil"><i class="fas fa-arrow-left"></i></i></a>
+                <img src="./images/logo/ohmyfood.png" alt="logo" class="la-palette__header--img"/>
+            </div>
+            <div class="restro">
+                <h1>La palette du goût</h1>
+                <form>
+                    <div>
+                        <h2>ENTRÉES</h2>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Fricassée d'escargot</h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Au piment d'Espelette </p>
+                                <label>
+                                    <span>25€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Foie gras de canard mi-cuit</h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Et ses copeaux de truffe noire</p>
+                                <label>
+                                    <span>35€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Oeuf au plat</h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Assaisonné à la truffe sur lit de caviar</p>
+                                <label>
+                                    <span>20€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <h2>PLATS</h2>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Filet de boeuf aux herbes</h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Accompagné de sa ribambelle de légumes</p>
+                                <label>
+                                    <span>40€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Parmentier de queue de boeuf</h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>À la truffe noire sur sa purée de panais</p>
+                                <label>
+                                    <span>35€</span>
+                                    <input type="checkbox" name="check" class="check">
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Filet de turbot</h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Aux agrumes</p>
+                                <label>
+                                    <span>44€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>DESSERTS</h2>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Paris-Brest</h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Revisité</p>
+                                <label>
+                                    <span>18€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Macaron au chocolat d'exception </h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Et glace à la vanille de Madagascar</p>
+                                <label>
+                                    <span>22€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Mousse au chocolat </h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Au piment d'Espelette et à la truffe noire</p>
+                                <label>
+                                    <span>23€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <input type="submit" value="Commander" class="btn__size"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="le-delice" class="le-delice">
+            <div>
+                <a href="#page-d-accueil"><i class="fas fa-arrow-left"></i></i></a>
+                <img src="./images/logo/ohmyfood.png" alt="logo" class="le-delice__header--img"/>
+            </div>
+            <div class="restro">
+                <h1>Le délice des sens</h1>
+                <form>
+                    <div>
+                        <h2>ENTRÉES</h2>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Tartare de thon</h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Assaisonné au yuzu</p>
+                                <label>
+                                    <span>25€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Bouchée de homard croustillant </h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Et sa farandole de petits légumes</p>
+                                <label>
+                                    <span>35€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Velouté de cèpes </h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Aux truffes</p>
+                                <label>
+                                    <span>20€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>PLATS</h2>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Poulet rôti aux herbes de Provence </h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Et sa crème de truffe</p>
+                                <label>
+                                    <span>40€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Langouste rôtie </h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Et ses légumes de saison</p>
+                                <label>
+                                    <span>35€</span>
+                                    <input type="checkbox" name="check">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Côte de boeuf Angus</h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Et sa purée de panais</p>
+                                <label>
+                                    <span>44€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>DESSERTS</h2>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Farandole de desserts</h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Du chef</p>
+                                <label>
+                                    <span>18€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Crème brulée </h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>Revisitée</p>
+                                <label>
+                                    <span>22€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="restro__menu">
+                            <div>
+                                <h2>Tiramisu </h2>
+                            </div>
+                            <div class="restro__menu--box">
+                                <p>À la noisette</p>
+                                <label>
+                                    <span>23€</span>
+                                    <input type="checkbox" name="check" class="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <input type="submit" value="Commander" class="btn__size"/>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-    <div id="l'enchantee" class="l-enchantee">
-        <div>
-            <a href="#la-francaise"><i class="fas fa-arrow-left"></i></i></a>
-            <img src="./images/logo/ohmyfood.png" alt="logo" class="l-enchantee__header--img"/>
-        </div>
-        <div class="restro">
-            <h1>La note enchantée</h1>
-            <form>
-                <div>
-                    <h2>ENTRÉES</h2>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Ravioles de foie gras </h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Accompagnés de leur crème à la truffe</p>
-                            <label>
-                                <span>25€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Caviar osciètre </h2>
 
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Sur blini à la farine de blé noir</p>
-                            <label>
-                                <span>35€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Homard et espuma de potiron</h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Mariné aux zestes d'orange</p>
-                            <label>
-                                <span>20€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Foie gras de canard cuit entier</h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Confiture de figue et pain toasté</p>
-                            <label>
-                                <span>35€</span>
-                                <input type="checkbox" name="check">
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h2>PLATS</h2>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Noix de coquilles Saint-Jacques</h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Sur lit de purée de céleri-rave</p>
-                            <label>
-                                <span>40€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Langoustine poêlée</h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Purée de patate douce</p>
-                            <label>
-                                <span>35€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-
-                    </div>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Mijoté de queue de boeuf </h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Et riz sauvage aux zestes de citron</p>
-                            <label>
-                                <span>44€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div>
-                    <h2>DESSERTS</h2>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Macaron noisette et chocolat</h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Glace au caramel brun et sel de Guérande</p>
-                            <label>
-                                <span>18€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-
-                    </div>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Baba au rhum revisité </h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Avec son coulis de citron</p>
-                            <label>
-                                <span>22€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Tarte au citron meringuée </h2>
-
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Déstructurée</p>
-                            <label>
-                                <span>23€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="bnt">
-                    <input type="button" value="Commander" class="btn__size"/>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <div id="la-palette" class="la-palette">
-        <div>
-            <a href="#l'enchantee"><i class="fas fa-arrow-left"></i></i></a>
-            <img src="./images/logo/ohmyfood.png" alt="logo" class="la-palette__header--img"/>
-        </div>
-        <div class="restro">
-            <h1>La palette du goût</h1>
-            <form>
-                <div>
-                    <h2>ENTRÉES</h2>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Fricassée d'escargot</h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Au piment d'Espelette </p>
-                            <label>
-                                <span>25€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Foie gras de canard mi-cuit</h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Et ses copeaux de truffe noire</p>
-                            <label>
-                                <span>35€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Oeuf au plat</h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Assaisonné à la truffe sur lit de caviar</p>
-                            <label>
-                                <span>20€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-
-                    </div>
-                </div>
-                <div>
-                    <h2>PLATS</h2>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Filet de boeuf aux herbes</h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Accompagné de sa ribambelle de légumes</p>
-                            <label>
-                                <span>40€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-
-                    </div>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Parmentier de queue de boeuf</h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>À la truffe noire sur sa purée de panais</p>
-                            <label>
-                                <span>35€</span>
-                                <input type="checkbox" name="check" class="check">
-                            </label>
-                        </div>
-
-                    </div>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Filet de turbot</h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Aux agrumes</p>
-                            <label>
-                                <span>44€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h2>DESSERTS</h2>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Paris-Brest</h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Revisité</p>
-                            <label>
-                                <span>18€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Macaron au chocolat d'exception </h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Et glace à la vanille de Madagascar</p>
-                            <label>
-                                <span>22€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Mousse au chocolat </h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Au piment d'Espelette et à la truffe noire</p>
-                            <label>
-                                <span>23€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="btn">
-                    <input type="button" value="Commander" class="btn__size"/>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <div id="le-delice" class="le-delice">
-        <div>
-            <a href="#la-palette"><i class="fas fa-arrow-left"></i></i></a>
-            <img src="./images/logo/ohmyfood.png" alt="logo" class="le-delice__header--img"/>
-        </div>
-        <div class="restro">
-            <h1>Le délice des sens</h1>
-            <form>
-                <div>
-                    <h2>ENTRÉES</h2>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Tartare de thon</h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Assaisonné au yuzu</p>
-                            <label>
-                                <span>25€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Bouchée de homard croustillant </h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Et sa farandole de petits légumes</p>
-                            <label>
-                                <span>35€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Velouté de cèpes </h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Aux truffes</p>
-                            <label>
-                                <span>20€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h2>PLATS</h2>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Poulet rôti aux herbes de Provence </h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Et sa crème de truffe</p>
-                            <label>
-                                <span>40€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Langouste rôtie </h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Et ses légumes de saison</p>
-                            <label>
-                                <span>35€</span>
-                                <input type="checkbox" name="check">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Côte de boeuf Angus</h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Et sa purée de panais</p>
-                            <label>
-                                <span>44€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h2>DESSERTS</h2>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Farandole de desserts</h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Du chef</p>
-                            <label>
-                                <span>18€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Crème brulée </h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>Revisitée</p>
-                            <label>
-                                <span>22€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="restro__menu">
-                        <div>
-                            <h2>Tiramisu </h2>
-                        </div>
-                        <div class="restro__menu--box">
-                            <p>À la noisette</p>
-                            <label>
-                                <span>23€</span>
-                                <input type="checkbox" name="check" class="checkbox">
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="btn">
-                    <input type="button" value="Commander" class="btn__size"/>
-                </div>
-            </form>
-        </div>
-    </div>
     <footer>
         <div>
             <a href="#logo"><h1>ohmyfood</h1></a>
-            <a>
-                <p>
-                   Proposer un restaurant
-                </p>
-            </a>
-            <a>
-                <p>
-                   Devenir partenaire
-                </p>
-            </a>
-            <a>
-                <p>
-                   Mentions légales
-                </p>
-            </a>
-            <a>
-                <p>
-                  Contact
-                </p>
-            </a>
+        </div>
+        <div>
+            <div>
+                <a>
+                    <p>
+                        Proposer un restaurant
+                    </p>
+                </a>
+            </div>
+            <div>
+                <a>
+                    <p>
+                        Devenir partenaire
+                    </p>
+                </a>
+            </div>
+            <div>
+                <a>
+                    <p>
+                        Mentions légales
+                    </p>
+                </a>
+            </div>
+            <div>
+                <a>
+                    <p>
+                        Contact
+                    </p>
+                </a>
+            </div>
         </div>
     </footer>
 
