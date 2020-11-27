@@ -225,3 +225,29 @@ margin-left: 20px;
     font-size: 1.2em;
   }
 }
+#page-de-menu{
+  position: relative;
+  flex: 1;
+}
+#page-de-menu>div{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: 3s;
+}
+#page-de-menu>div:target{
+  transform: translateX(0px);
+}
+
+footer{
+  position: absolute;
+  left:0;
+  bottom:0;
+  width: 100%;
+  background: black;
+  color: white;
+
+}
