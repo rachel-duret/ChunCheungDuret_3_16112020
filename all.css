@@ -223,11 +223,42 @@
   transform: translateX(0px); }
 
 footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  widthwidth: 100%;
+  height: auto;
   background: black;
   color: white; }
+  footer input {
+    margin-bottom: 5px;
+    text-align: right;
+    background: #99E2D0; }
+  footer textarea {
+    background: #99E2D0;
+    font-size: 1em;
+    color: white; }
+
+#email {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+  transform: 2s; }
+  #email form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 10px; }
+  #email form > input {
+    cursor: pointer; }
+
+#contact {
+  position: relative;
+  flex: 1; }
+
+#email:target {
+  transform: translateY(0px); }
 
 /*# sourceMappingURL=all.css.map */
