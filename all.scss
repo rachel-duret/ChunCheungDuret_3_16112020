@@ -202,9 +202,6 @@ margin-left: 20px;
   margin-top: 55%;
   border-radius: 50px 50px 0px 0px;
   padding: 20px;
-  & h1{
-    font-weight:bolder;
-  }
   &__menu{
     margin-bottom: 20px;
     width: 100%;
@@ -212,20 +209,69 @@ margin-left: 20px;
     background-color: white;
     border-radius: 20px;
     line-height: 1.2em;
-  }
-  &__menu--box{
     display:flex ;
+    flex-direction: row;
     justify-content: space-between;
     vertical-align: top;
-    padding:0px 20px 0px 20px;
+    position: relative;
+    margin-right: 0;
+    & h2{
+      font-size: 1em;
+      overflow:hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin: 10px 0px 0px 20px;
+    }
+    & p{
+      font-size: 1em;
+      overflow:hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin: 0px 0px 10px 20px;
+    }
+    &span{
+      display: inline-block;
+      margin-right: 0;
+      vertical-align: bottom;
+
+    }
   }
-  & h2{
-    padding: 20px 0px 0px 20px;
-    margin: 0;
-    font-size: 1.2em;
-  }
+
+  &__menu--box{
+      display: inline-block;
+      height: 50px;
+      width: 50px;
+      background-color: $tertiary-color;
+      margin: 0;
+    padding: 0;
+    border-radius: 0px 20px 20px 0px ;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(200%);
+    transition: 3s;
+    & label{
+      position: relative;
+      display: inline-block;
+    }
+    & input{
+      display: inline-block;
+      margin-right: 5px;
+      text-align: center;
+      position:absolute;
+      top: 50%;
+      left: 50%;
+    }
+    }
 }
-#page-de-menu{
+.restro__menu--box:target{
+  transform: translateX(50px);
+
+}
+
+/*#page-de-menu{
   position: relative;
   flex: 1;
 }
@@ -240,10 +286,10 @@ margin-left: 20px;
 }
 #page-de-menu>div:target{
   transform: translateX(0px);
-}
+}*/
 
 footer{
-  widthwidth: 100%;
+  max-width: 100%;
   height: auto;
   background: black;
   color: white;
@@ -266,7 +312,7 @@ footer{
   width: 100%;
   height: 100%;
   transform: translateY(-100%);
-  transform: 2s;
+  transition: 2s;
   & form{
     display: flex;
     flex-direction: column;
