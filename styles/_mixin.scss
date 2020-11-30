@@ -1,10 +1,16 @@
 @mixin phone-width {
   @media all and (max-width: $phone-screen) {
-    @content
+    @content;
   }
 }
+@mixin tablet-width {
+  @media all and (min-width:$pc-screen) and (max-width:$tablet-screen) {
+    @content;
+  }
+  
+}
 @mixin pc-width{
-  @media all and (min-width: $phone-screen) {
-    @content
+  @media all and (min-width: $pc-screen) {
+    @content;
   }
 }

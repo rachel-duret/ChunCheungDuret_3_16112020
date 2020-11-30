@@ -1,14 +1,10 @@
-@import "./styles/variables";
-@import "./styles/mixin";
-@import "./styles/extend";
-
 *{
     margin: 0;
     padding: 0;
   }
   body{
-    @include pc-width{
-        margin: 20px;
+    @include phone-width{
+      padding: 0px;
     }
   }
   .logo{
@@ -63,20 +59,9 @@
     }
   }
   .indicator{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      background-color: $bg-color;
-      &__title{
-          padding-left: 20px;
-      }
+    margin-left: 20px;
     &__element{
-        display: flex;
-      @extend %indicator-dimension--pc;
-      @extend %chadow-box;
-      >a{
-          color: black;
-      }
+      @extend %textes-dimension;
       >span{
         display: inline-block;
         position: relative;
@@ -96,27 +81,21 @@
   #restaurants{
   margin-left: 20px;
     background-color: $bg-color;
-    margin: 30px;
-  }
-  .restaurant-container {
-    width: 20%;;
-    height: auto;
-    border-radius: 20px;
-    line-height: 1.2em;
     display: flex;
     flex-direction: column;
-    border: 3px solid none;
-    @extend %chadow-box;
-    &--all{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }   
+    justify-content: space-between;
+  }
+  .restaurant-container {
+    max-width: 768px;
+    height: auto;
+    border-radius: 20px;
+    margin: 30px;
+    line-height: 1.2em;
     &__img{
       width: 100%;
       height: auto;
       border-radius: 20px;
-      padding-bottom: 0;
+      margin-bottom: 0;
       & img{
         width: 100%;
         height: 200px;
@@ -124,119 +103,93 @@
       }
     }
     &__texts{
-      width: 100%;
-      background-color:#fff;
+      background-color: white;
       border-radius: 0px 0px 20px 20px;
+      padding: 20px;
+      margin-top:0;
       font-weight: bolder;
-      font-size: 1em;
-      padding-bottom: 10px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      font-size: 1.1em;
     }
     &__texts a{
       text-decoration: none;
-      color: black;
     }
   }
   .la-francaise{
-    
-    min-width: $pc-screen;
+    max-width: 780px;
     background-position:left 60px;
     background-image: url(" ./images-origin/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     &__header{
-      position: relative;
       display: flex;
-      flex-direction: row;
+      justify-content: space-around;
       padding-top: 20px;
     }
     &__header i{
-      display: inline-block;
       color: black;
-      padding-left: 20px;
     }
     &__header--img{
-      display: inline-block;
-      width: 200px;
-      height: auto;
-      position: absolute;
-      right: 50%;
+      width: 30%;
+      height: 30px;
     }
   }
   .l-enchantee{
-    min-width: $pc-screen;
+    max-width: 780px;
     background-position:left 60px;
     background-image: url(" ./images-origin/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     &__header{
       display: flex;
-      flex-direction: row;
+      justify-content: space-around;
       padding-top: 20px;
-      position: relative;
     }
     &__header i{
-        padding-left: 20px;
-        display: inline-block;
       color: black;
     }
     &__header--img{
-      width: 200px;
-      height: auto;
-      position: absolute;
-      right: 50%;
+      width: 30%;
+      height: 30px;
     }
   }
   .la-palette{
-    min-width: $pc-screen;
+    max-width: 780px;
     background-position:left 60px;
     background-image: url(" ./images-origin/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     &__header{
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        padding-top: 20px;
-      }
-      &__header i{
-        padding-left: 20px;
-        display: inline-block;
-        color: black;
-      }
-      &__header--img{
-        width: 200px;
-        height: auto;
-        position: absolute;
-        right: 50%;
-      }
+      display: flex;
+      justify-content: space-around;
+      padding-top: 20px;
     }
+    &__header i{
+      color: black;
+    }
+    &__header--img{
+      width: 30%;
+      height: 30px;
+    }
+  }
   .le-delice{
-    width: $pc-screen;
+    max-width: 780px;
     background-position:left 60px;
     background-image: url(" ./images-origin/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     &__header{
-        display: flex;
-        flex-direction: row;
-        padding-top: 20px;
-        position: relative;
-      }
-      &__header i{
-          padding-left: 20px;
-          display: inline-block;
-        color: black;
-      }
-      &__header--img{
-        width: 200px;
-        height: auto;
-        position: absolute;
-        right: 50%;
-      }
+      display: flex;
+      justify-content: space-around;
+      padding-top: 20px;
     }
+    &__header i{
+      color: black;
+    }
+    &__header--img{
+      width: 30%;
+      height: 30px;
+    }
+  }
   
   
   
@@ -246,12 +199,12 @@
     border-radius: 50px 50px 0px 0px;
     padding: 20px;
     &__menu{
-        @extend %chadow-box;
       margin-bottom: 20px;
       width: 100%;
-      height: 50px;
+      height: auto;
       background-color: white;
       border-radius: 20px;
+      line-height: 1.2em;
       display:flex ;
       flex-direction: row;
       justify-content: space-between;
@@ -270,13 +223,13 @@
         overflow:hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        margin: 0px 0px 0px 20px;
+        margin: 0px 0px 10px 20px;
       }
-      & span{
+      &span{
         display: inline-block;
-        position: absolute;
-        right: 60px;
-        top:50%;
+        margin-right: 0;
+        vertical-align: bottom;
+  
       }
     }
   
@@ -289,88 +242,80 @@
       padding: 0;
       border-radius: 0px 20px 20px 0px ;
       position: absolute;
-      right: 0;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      transform: translateX(200%);
+      transition: 3s;
+      & label{
+        position: relative;
+        display: inline-block;
+      }
       & input{
         display: inline-block;
         margin-right: 5px;
         text-align: center;
         position:absolute;
-        top: 40%;
-        left: 40%;
+        top: 50%;
+        left: 50%;
       }
       }
-    }
-  
-  
-  footer{
-    width: 100%;
-    height: auto;
-    background: black;
-    color: white;
-    & h1{
-        padding-left: 20px;
-    }
-    & a{
-        text-decoration: none;
-        color: #fff;
-    }
-    & ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 20px;
-        list-style-type: none;
-        padding-bottom: 30px;
-    }
-    & form{
-        color: black;
-    
-    }
-    & fieldset{
-        display: flex;
-        flex-direction: column;
-        width: 500px;
-        padding: 20px;
-        position: relative;
-        background-color:$primary-color;
-        
-    }
-    & input{
-      margin-bottom: 5px;
-      text-align: right;
-      background: $bg-color;
-      color: black;
-      position: absolute;
-      left: 60px;
-      display: inline-block;
-      margin-bottom:30px;
-    }
-    & textarea{
-      background: $bg-color;
-      width: 500px;
-      height: 500px;
-      font-size: 1em;
-      color: black;
-      padding: 20px;
-    }
+  }
+  .restro__menu--box:target{
+    transform: translateX(50px);
   
   }
   
+  #page-de-menu{
+    position: relative;
+    flex: 1;
+  }
+  #page-de-menu>div{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: 3s;
+  }
+  #page-de-menu>div:target{
+    transform: translateX(0px);
+  }
+  
+  
+  footer{
+    max-width: 100%;
+    height: auto;
+    background: black;
+    color: white;
+    & input{
+      margin-bottom: 5px;
+      text-align: right;
+      background: $tertiary-color;
+    }
+    & textarea{
+      background: $tertiary-color;
+      font-size: 1em;
+      color: white;
+    }
+  
+  }
   #email{
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    transform: translateY(200%);
+    transform: translateY(-100%);
     transition: 2s;
     & form{
       display: flex;
       flex-direction: column;
-      border: 1px solid none;
+      border: 1px solid #000;
       align-items:center;
-      text-align: left;
-      margin-bottom: 10px;
+      text-align: left;margin-bottom: 10px;
     }
     & form>input{
       cursor: pointer;
@@ -383,5 +328,6 @@
   #email:target{
     transform: translateY(0px);
   }
+  
   
   

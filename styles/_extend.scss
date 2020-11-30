@@ -1,0 +1,25 @@
+%indicator-dimension--pc{
+    width: 20%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid none;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+    >a{
+      text-decoration: none;
+    }
+  }
+  %btn{
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    background:linear-gradient($secondary-color,$primary-color);
+    text-align: center;
+    color: white;
+  }
+  %chadow-box{
+    box-shadow:-1px 5px 10px rgba(138, 131, 131, 0.5);
+  }
