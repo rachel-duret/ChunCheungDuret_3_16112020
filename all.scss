@@ -6,230 +6,177 @@
     margin: 0;
     padding: 0;
   }
-  #bolc-page{
-   min-width:$tablet-screen;
-
-  }
-  .logo{
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    padding: 10px;
-    & img{
-      text-align: center;
-      width: 200px;
-      height: auto;
-      margin: 0 auto;
-    }
-  }
-  .banner{
-    background-color: $bg-color;
-    &__search{
-      border: 1px solid $bg-color;
-      background-color: darken($bg-color,10%);
-      box-shadow: 2px 0px 5px rgba(242,242,242,0.5) ;
-      text-align: center;
-  vertical-align: middle;
-      width:auto;
+    .logo{
+      width: 100%;
       height: 30px;
-      padding-top: 10px;;
-      margin: 0;
-      &--input{
-        border: none;
-        background-color:darken($bg-color,10%);
-    }
-    }
-    &__title{
-      white-space: pre;
-      font-size:1.5em;
-      font-weight: bold;
       text-align: center;
-    }
-    &__description{
-      font-size: 0.8em;
-      font-weight: lighter;
-      text-align: center;
-    }
-  }
-  .btn{
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    padding-bottom: 50px;
-    &__size{
-      cursor: pointer;
-      @include btn;
-    }
-  }
-  .indicator{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      background-color: $bg-color;
-      &__title{
-          padding-left: 20px;
-      }
-    &__element{
-        display: flex;
-      @include indicator-dimension;
-      @include chadow-box;
-      >a{
-          color: black;
-      }
-      >span{
-        display: inline-block;
-        position: relative;
-        left: -20px;
-        width: 20px;
-        height: 20px;
+      padding: 10px;
+      & img{
         text-align: center;
-        background: $primary-color;
-        border-radius: 50%;
-      }
-      >i{
-        display: inline-block;
-        padding-left: 20px;
+        width: 200px;
+        height: auto;
+        margin: 0 auto;
       }
     }
-  }
-  #restaurants{
-    min-width:$tablet-screen;
-  margin-left: 20px;
-    background-color: $bg-color;
-    margin: 30px;
-  }
-  .restaurant-container {
-    width: 20%;;
-    height: auto;
-    border-radius: 20px;
-    line-height: 1.2em;
-    display: flex;
-    flex-direction: column;
-    border:3px solid transparent;
-    position: relative;
-    @include chadow-box;
-    &--all{
+    .banner{
+      background-color: $bg-color;
+      &__search{
+        border: 1px solid $bg-color;
+        background-color: darken($bg-color,10%);
+        box-shadow: 2px 0px 5px rgba(242,242,242,0.5) ;
+        text-align: center;
+    vertical-align: middle;
+        width:auto;
+        height: 30px;
+        padding-top: 10px;;
+        margin: 0;
+        &--input{
+          border: none;
+          background-color:darken($bg-color,10%);
+      }
+      }
+      &__title{
+        white-space: pre;
+        font-size:1.5em;
+        font-weight: bold;
+        text-align: center;
+      }
+      &__description{
+        font-size: 0.8em;
+        font-weight: lighter;
+        text-align: center;
+      }
+    }
+    .btn{
+      width: 100%;
+      height: 30px;
+      text-align: center;
+      padding-bottom: 50px;
+      &__size{
+        cursor: pointer;
+        @include btn;
+      }
+    }
+    .indicator{
+      width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: $bg-color;
+        >div{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          margin: 20px;
+        }
+        &__title{
+            padding-left: 20px;
+        }
+      &__element{
+        @include indicator-dimension;
+        @include chadow-box;
+        >a{
+            color: black;
+        }
+        >span{
+          display: inline-block;
+          position: relative;
+          left: -20px;
+          width: 20px;
+          height: 20px;
+          text-align: center;
+          background: $primary-color;
+          border-radius: 50%;
+        }
+        >i{
+          display: inline-block;
+          padding-left: 20px;
+        }
+      }
+    }
+    #restaurants{
+      min-width:$tablet-screen;
+    margin-left: 20px;
+      background-color: $bg-color;
+      margin: 30px;
+    }
+    .restaurant-container {
+      width: 20%;;
+      height: auto;
+      border-radius: 20px;
+      line-height: 1.2em;
+      display: flex;
+      flex-direction: column;
+      border:3px solid transparent;
+     // position: relative;
+      @include chadow-box;
+      &--all{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+      }   
+      &__img{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        padding-bottom: 0;
+        & img{
+          width: 100%;
+          height: 200px;
+          border-radius: 20px 20px 0px 0px;
+        }
+      }
+      &__texts{
+        width: 100%;
+        background-color:#fff;
+        border-radius: 0px 0px 20px 20px;
+        font-weight: bolder;
+        font-size: 1em;
+        padding-bottom: 10px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }   
-    &__img{
-      width: 100%;
-      height: auto;
-      border-radius: 20px;
-      padding-bottom: 0;
-      & img{
-        width: 100%;
-        height: 200px;
-        border-radius: 20px 20px 0px 0px;
+      }
+      &__texts a{
+        text-decoration: none;
+        color: black;
       }
     }
-    &__texts{
-      width: 100%;
-      background-color:#fff;
-      border-radius: 0px 0px 20px 20px;
-      font-weight: bolder;
-      font-size: 1em;
-      padding-bottom: 10px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    &__texts a{
-      text-decoration: none;
-      color: black;
-    }
-  }
-  .restaurant-container__img--nv::after{
-    content: 'Nouveau';
-    width: 100px;
-    height: 40px;
-    background-color: $tertiary-color;
-    color: #fff;
-    position: absolute;
-
-  }
-  .la-francaise{
     
-    min-width:$tablet-screen;
-    background-position:left 60px;
-    background-image: url(" ./images-origin/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    &__header{
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      padding-top: 20px;
-    }
-    &__header i{
-      display: inline-block;
-      color: black;
-      padding-left: 20px;
-    }
-    &__header--img{
-      display: inline-block;
-      width: 200px;
-      height: auto;
-      position: absolute;
-      right: 50%;
-    }
-  }
-  .l-enchantee{
-    min-width:$tablet-screen;
-    background-position:left 60px;
-    background-image: url(" ./images-origin/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    &__header{
-      display: flex;
-      flex-direction: row;
-      padding-top: 20px;
-      position: relative;
-    }
-    &__header i{
-        padding-left: 20px;
-        display: inline-block;
-      color: black;
-    }
-    &__header--img{
-      width: 200px;
-      height: auto;
-      position: absolute;
-      right: 50%;
-    }
-  }
-  .la-palette{
-    min-width:$tablet-screen;
-    background-position:left 60px;
-    background-image: url(" ./images-origin/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    &__header{
+    .la-francaise{
+      
+      min-width:$tablet-screen;
+      background-position:left 60px;
+      background-image: url(" ./images-origin/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      &__header{
         position: relative;
         display: flex;
         flex-direction: row;
         padding-top: 20px;
       }
       &__header i{
-        padding-left: 20px;
         display: inline-block;
         color: black;
+        padding-left: 20px;
       }
       &__header--img{
+        display: inline-block;
         width: 200px;
         height: auto;
         position: absolute;
         right: 50%;
       }
     }
-  .le-delice{
-    min-width:$tablet-screen;
-    background-position:left 60px;
-    background-image: url(" ./images-origin/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    &__header{
+    .l-enchantee{
+      min-width:$tablet-screen;
+      background-position:left 60px;
+      background-image: url(" ./images-origin/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      &__header{
         display: flex;
         flex-direction: row;
         padding-top: 20px;
@@ -247,179 +194,290 @@
         right: 50%;
       }
     }
-  
-  
-  
-  .restro{
-    background-color: $bg-color;
-    margin-top: 55%;
-    border-radius: 50px 50px 0px 0px;
-    padding: 20px;
-    &__menu{
-        @include chadow-box;
-      margin-bottom: 20px;
-      width: 100%;
-      height: 50px;
-      background-color: white;
-      border-radius: 20px;
-      display:flex ;
-      flex-direction: row;
-      justify-content: space-between;
-      vertical-align: top;
-      position: relative;
-      margin-right: 0;
-      & h2{
-        font-size: 1em;
-        overflow:hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        margin: 10px 0px 0px 20px;
+    .la-palette{
+      min-width:$tablet-screen;
+      background-position:left 60px;
+      background-image: url(" ./images-origin/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      &__header{
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          padding-top: 20px;
+        }
+        &__header i{
+          padding-left: 20px;
+          display: inline-block;
+          color: black;
+        }
+        &__header--img{
+          width: 200px;
+          height: auto;
+          position: absolute;
+          right: 50%;
+        }
       }
-      & p{
-        font-size: 1em;
-        overflow:hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        margin: 0px 0px 0px 20px;
+    .le-delice{
+      min-width:$tablet-screen;
+      background-position:left 60px;
+      background-image: url(" ./images-origin/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      &__header{
+          display: flex;
+          flex-direction: row;
+          padding-top: 20px;
+          position: relative;
+        }
+        &__header i{
+            padding-left: 20px;
+            display: inline-block;
+          color: black;
+        }
+        &__header--img{
+          width: 200px;
+          height: auto;
+          position: absolute;
+          right: 50%;
+        }
       }
-      & span{
-        display: inline-block;
-        position: absolute;
-        right: 60px;
-        top:50%;
-      }
-    }
-  
-    &__menu--box{
-        display: inline-block;
+    
+    
+    
+    .restro{
+      background-color: $bg-color;
+      margin-top: 55%;
+      border-radius: 50px 50px 0px 0px;
+      padding: 20px;
+      &__menu{
+          @include chadow-box;
+        margin-bottom: 20px;
+        width: 100%;
         height: 50px;
-        width: 50px;
-        background-color: $tertiary-color;
-        margin: 0;
-      padding: 0;
-      border-radius: 0px 20px 20px 0px ;
-      position: absolute;
-      right: 0;
-      & input{
-        display: inline-block;
-        margin-right: 5px;
-        text-align: center;
-        position:absolute;
-        top: 40%;
-        left: 40%;
-      }
-      }
-    }
-  
-  
-  footer{
-    width: 100%;
-    height: auto;
-    background: black;
-    color: white;
-    & h1{
-        padding-left: 20px;
-    }
-    & a{
-        text-decoration: none;
-        color: #fff;
-    }
-    & ul{
-        display: flex;
+        background-color: white;
+        border-radius: 20px;
+        display:flex ;
         flex-direction: row;
         justify-content: space-between;
-        margin: 20px;
-        list-style-type: none;
-        padding-bottom: 30px;
-    }
-    & form{
+        vertical-align: top;
+        position: relative;
+        margin-right: 0;
+        & h2{
+          font-size: 1em;
+          overflow:hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          margin: 10px 0px 0px 20px;
+        }
+        & p{
+          font-size: 1em;
+          overflow:hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          margin: 0px 0px 0px 20px;
+        }
+        & span{
+          display: inline-block;
+          position: absolute;
+          right: 60px;
+          top:50%;
+        }
+      }
+    
+      &__menu--box{
+          display: inline-block;
+          height: 50px;
+          width: 50px;
+          background-color: $tertiary-color;
+          margin: 0;
+        padding: 0;
+        border-radius: 0px 20px 20px 0px ;
+        position: absolute;
+        right: 0;
+        & input{
+          display: inline-block;
+          margin-right: 5px;
+          text-align: center;
+          position:absolute;
+          top: 40%;
+          left: 40%;
+        }
+        }
+      }
+    
+    
+    footer{
+      width: 100%;
+      height: auto;
+      background: black;
+      color: white;
+      & h1{
+          padding-left: 20px;
+      }
+      & a{
+          text-decoration: none;
+          color: #fff;
+      }
+      & ul{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin: 20px;
+          list-style-type: none;
+          padding-bottom: 30px;
+      }
+      & form{
+          color: black;
+      
+      }
+      & fieldset{
+          display: flex;
+          flex-direction: column;
+          width: 500px;
+          padding: 20px;
+          position: relative;
+          background-color:$primary-color;
+          
+      }
+      & input{
+        margin-bottom: 5px;
+        text-align: right;
+        background: $bg-color;
         color: black;
+        position: absolute;
+        left: 60px;
+        display: inline-block;
+        margin-bottom:30px;
+      }
+      & textarea{
+        background: $bg-color;
+        width: 500px;
+        height: 500px;
+        font-size: 1em;
+        color: black;
+        padding: 20px;
+      }
     
     }
-    & fieldset{
+    
+    #email{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      transform: translateX(-150%);
+      transition: 2s;
+      & form{
         display: flex;
         flex-direction: column;
-        width: 500px;
-        padding: 20px;
-        position: relative;
-        background-color:$primary-color;
-        
+        border: 1px solid transparent;
+        align-items:center;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+      & form>input{
+        cursor: pointer;
     }
-    & input{
-      margin-bottom: 5px;
-      text-align: right;
-      background: $bg-color;
-      color: black;
-      position: absolute;
-      left: 60px;
-      display: inline-block;
-      margin-bottom:30px;
     }
-    & textarea{
-      background: $bg-color;
-      width: 500px;
-      height: 500px;
-      font-size: 1em;
-      color: black;
-      padding: 20px;
+    #contact{
+      position: relative;
+      flex: 1;
     }
+    #email:target{
+      transform: translateY(0px);
+    }  
   
-  }
-  
-  #email{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(200%);
-    transition: 2s;
-    & form{
-      display: flex;
-      flex-direction: column;
-      border: 1px solid transparent;
-      align-items:center;
-      text-align: left;
-      margin-bottom: 10px;
-    }
-    & form>input{
-      cursor: pointer;
-  }
-  }
-  #contact{
-    position: relative;
-    flex: 1;
-  }
-  #email:target{
-    transform: translateY(0px);
-  }
 
-
-  @media screen and (min-width:$phone-screen) and (max-width:$tablet-screen){
+  @include tablet-width{
     .indicator{
+      width: 100%;
+        display: flex;
+        flex-direction: column;
+        >div{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }        
+    } 
+    #restaurants{
+      width:100%;
+    }
+    .restaurant-container {
+      width: auto;
+      height: auto;
       display: flex;
       flex-direction: column;
-      &__element--container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+      margin-bottom: 20px;
+      @include chadow-box;
+      &--all{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin-bottom: 20px;
+      }   
+      &__img{
+        width:300px;
+        height: auto;
+        & img{
+          width:100%;
+          height:200px;
+        }
       }
-    }
-    .restaurant-container--all{
-      width: 100%;
-      display: flex;
-      flex-direction:row;
+      &__texts{
+        width: 100%;
+      }
+      
+    }   
+    footer{
       flex-wrap: wrap;
-      restaurant-container{
-        width: 40%;
-      }
     }
-
-
-
-
-
   }
-  
 
+  @include phone-width{
+    .indicator{
+      width: 100%;
+        display: flex;
+        flex-direction: column;
+        >div{
+          width: 100%;
+          display: flex;
+          flex-direction:column;
+        }        
+    } 
+    #restaurants{
+      width:100%;
+    }
+    .restaurant-container {
+      width:300px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      @include chadow-box;
+      &--all{
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+      }   
+      &__img{
+        width:100%;
+        height: auto;
+        & img{
+          width:100%;
+          height:200px;
+        }
+      }
+      &__texts{
+        width: 100%;
+      }
+      
+    }   
+    footer{
+      flex-wrap: wrap;
+    }
+  }
 
+ 

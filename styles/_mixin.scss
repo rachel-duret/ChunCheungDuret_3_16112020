@@ -10,12 +10,12 @@
   
 }
 @mixin pc-width{
-  @media all and (min-width: $pc-screen) {
+  @media all and (min-width: $tablet-screen) {
     @content;
   }
 }
 @mixin indicator-dimension{
-  width: 20%;
+  width: auto;
   height: 30px;
   padding: 10px;
   border: 1px solid transparent;
