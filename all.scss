@@ -146,7 +146,7 @@
     
     .la-francaise{
       
-      min-width:$tablet-screen;
+      min-width:300px;
       background-position:left 60px;
       background-image: url(" ./images-origin/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
       background-repeat: no-repeat;
@@ -171,7 +171,7 @@
       }
     }
     .l-enchantee{
-      min-width:$tablet-screen;
+      min-width:300px;
       background-position:left 60px;
       background-image: url(" ./images-origin/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
       background-repeat: no-repeat;
@@ -195,7 +195,7 @@
       }
     }
     .la-palette{
-      min-width:$tablet-screen;
+      min-width:300px;
       background-position:left 60px;
       background-image: url(" ./images-origin/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
       background-repeat: no-repeat;
@@ -219,7 +219,7 @@
         }
       }
     .le-delice{
-      min-width:$tablet-screen;
+      min-width:300px;
       background-position:left 60px;
       background-image: url(" ./images-origin/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
       background-repeat: no-repeat;
@@ -430,12 +430,11 @@
         width: 100%;
       }
       
-    }   
+    } 
     footer{
       flex-wrap: wrap;
     }
   }
-
   @include phone-width{
     .indicator{
       width: 100%;
@@ -479,5 +478,5 @@
       flex-wrap: wrap;
     }
   }
-
+  
  
