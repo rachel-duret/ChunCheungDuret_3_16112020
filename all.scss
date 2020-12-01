@@ -6,10 +6,9 @@
     margin: 0;
     padding: 0;
   }
-  body{
-    @include pc-width{
-        margin: 20px;
-    }
+  #bolc-page{
+   min-width:$tablet-screen;
+
   }
   .logo{
     width: 100%;
@@ -59,7 +58,7 @@
     padding-bottom: 50px;
     &__size{
       cursor: pointer;
-      @extend %btn;
+      @include btn;
     }
   }
   .indicator{
@@ -72,8 +71,8 @@
       }
     &__element{
         display: flex;
-      @extend %indicator-dimension--pc;
-      @extend %chadow-box;
+      @include indicator-dimension;
+      @include chadow-box;
       >a{
           color: black;
       }
@@ -94,6 +93,7 @@
     }
   }
   #restaurants{
+    min-width:$tablet-screen;
   margin-left: 20px;
     background-color: $bg-color;
     margin: 30px;
@@ -105,8 +105,9 @@
     line-height: 1.2em;
     display: flex;
     flex-direction: column;
-    border: 3px solid none;
-    @extend %chadow-box;
+    border:3px solid transparent;
+    position: relative;
+    @include chadow-box;
     &--all{
         display: flex;
         flex-direction: row;
@@ -139,9 +140,18 @@
       color: black;
     }
   }
+  .restaurant-container__img--nv::after{
+    content: 'Nouveau';
+    width: 100px;
+    height: 40px;
+    background-color: $tertiary-color;
+    color: #fff;
+    position: absolute;
+
+  }
   .la-francaise{
     
-    min-width: $pc-screen;
+    min-width:$tablet-screen;
     background-position:left 60px;
     background-image: url(" ./images-origin/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     background-repeat: no-repeat;
@@ -166,7 +176,7 @@
     }
   }
   .l-enchantee{
-    min-width: $pc-screen;
+    min-width:$tablet-screen;
     background-position:left 60px;
     background-image: url(" ./images-origin/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
     background-repeat: no-repeat;
@@ -190,7 +200,7 @@
     }
   }
   .la-palette{
-    min-width: $pc-screen;
+    min-width:$tablet-screen;
     background-position:left 60px;
     background-image: url(" ./images-origin/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     background-repeat: no-repeat;
@@ -214,7 +224,7 @@
       }
     }
   .le-delice{
-    width: $pc-screen;
+    min-width:$tablet-screen;
     background-position:left 60px;
     background-image: url(" ./images-origin/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
     background-repeat: no-repeat;
@@ -246,7 +256,7 @@
     border-radius: 50px 50px 0px 0px;
     padding: 20px;
     &__menu{
-        @extend %chadow-box;
+        @include chadow-box;
       margin-bottom: 20px;
       width: 100%;
       height: 50px;
@@ -367,7 +377,7 @@
     & form{
       display: flex;
       flex-direction: column;
-      border: 1px solid none;
+      border: 1px solid transparent;
       align-items:center;
       text-align: left;
       margin-bottom: 10px;
@@ -383,5 +393,33 @@
   #email:target{
     transform: translateY(0px);
   }
+
+
+  @media screen and (min-width:$phone-screen) and (max-width:$tablet-screen){
+    .indicator{
+      display: flex;
+      flex-direction: column;
+      &__element--container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+    .restaurant-container--all{
+      width: 100%;
+      display: flex;
+      flex-direction:row;
+      flex-wrap: wrap;
+      restaurant-container{
+        width: 40%;
+      }
+    }
+
+
+
+
+
+  }
   
-  
+
+

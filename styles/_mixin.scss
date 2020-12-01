@@ -4,7 +4,7 @@
   }
 }
 @mixin tablet-width {
-  @media all and (min-width:$pc-screen) and (max-width:$tablet-screen) {
+  @media all and (min-width:$phone-screen) and (max-width:$tablet-screen) {
     @content;
   }
   
@@ -13,4 +13,30 @@
   @media all and (min-width: $pc-screen) {
     @content;
   }
+}
+@mixin indicator-dimension{
+  width: 20%;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: white;
+  margin-bottom: 20px;
+  >a{
+    text-decoration: none;
+  }
+}
+@mixin btn{
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 40px;
+  background:linear-gradient($secondary-color,$primary-color);
+  text-align: center;
+  color: white;
+}
+@mixin chadow-box {
+  box-shadow:-1px 5px 10px rgba(138, 131, 131, 0.5);
+  
 }
