@@ -57,6 +57,11 @@
         @include btn;
       }
     }
+    #btn--main:hover{
+      transform: scale(2);
+      transition: 2s;
+
+    }
     .indicator{
       width: 100%;
         display: flex;
@@ -109,7 +114,6 @@
       display: flex;
       flex-direction: column;
       border:3px solid transparent;
-     // position: relative;
       @include chadow-box;
       &--all{
           display: flex;
@@ -121,6 +125,13 @@
         height: auto;
         border-radius: 20px;
         padding-bottom: 0;
+        &--nv::after{
+          content:'Nouveau';
+          width: 100px;
+          height: 40px;
+          background: $tertiary-color;
+
+        }
         & img{
           width: 100%;
           height: 200px;
@@ -137,6 +148,8 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        box-sizing: border-box;
+        padding:10px 20px 0px 20px ;
       }
       &__texts a{
         text-decoration: none;
@@ -145,7 +158,6 @@
     }
     
     .la-francaise{
-      
       min-width:300px;
       background-position:left 60px;
       background-image: url(" ./images-origin/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
@@ -263,11 +275,12 @@
         vertical-align: top;
         position: relative;
         margin-right: 0;
+        cursor: pointer;
         & h2{
           font-size: 1em;
-          overflow:hidden;
-          text-overflow: ellipsis;
+          overflow:hidden; 
           white-space: nowrap;
+          text-overflow: ellipsis;
           margin: 10px 0px 0px 20px;
         }
         & p{
@@ -295,6 +308,7 @@
         border-radius: 0px 20px 20px 0px ;
         position: absolute;
         right: 0;
+        transform: translateX(80px);
         & input{
           display: inline-block;
           margin-right: 5px;
@@ -304,6 +318,17 @@
           left: 40%;
         }
         }
+      }
+      .restro__menu:hover span{
+        display: bloc;
+      }
+     // .restro__menu--box{
+     //   display: none;
+     // }
+      .restro__menu:hover .restro__menu--box{
+        display: block;
+        transform: translateX(0px);
+        transition: 1s;
       }
     
     
@@ -392,7 +417,7 @@
 
   @include tablet-width{
     .indicator{
-      width: 100%;
+       width: 100%;
         display: flex;
         flex-direction: column;
         >div{
@@ -400,6 +425,9 @@
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
+          box-sizing: border-box;
+        
+
         }        
     } 
     #restaurants{
@@ -413,10 +441,14 @@
       margin-bottom: 20px;
       @include chadow-box;
       &--all{
+        width: 100%;
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
-          margin-bottom: 20px;
+          justify-content: space-around;
+          
+          
+          box-sizing: border-box;
       }   
       &__img{
         width:300px;
@@ -432,7 +464,11 @@
       
     } 
     footer{
-      flex-wrap: wrap;
+      width: 100%;
+      ul{
+
+        flex-wrap: wrap;
+      }
     }
   }
   @include phone-width{
@@ -459,6 +495,7 @@
       &--all{
           display: flex;
           flex-direction: column;
+          width: 100%;
           margin-bottom: 20px;
       }   
       &__img{
@@ -474,8 +511,10 @@
       }
       
     }   
-    footer{
-      flex-wrap: wrap;
+    footer ul{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
     }
   }
   
