@@ -51,6 +51,7 @@
       width: 100%;
       height: 30px;
       text-align: center;
+      margin: 20px;
       padding-bottom: 50px;
       &__size{
         cursor: pointer;
@@ -79,6 +80,7 @@
             padding-left: 20px;
         }
       &__element{
+        cursor: pointer;
         @include indicator-dimension;
         @include chadow-box;
         >a{
@@ -100,6 +102,13 @@
         }
       }
     }
+    .indicator i:hover{
+      color: $primary-color;    
+    }
+    .indicator__element:hover{
+      background-color: rgba($primary-color,0.3);
+    }
+    
     #restaurants{
       min-width:$tablet-screen;
     margin-left: 20px;
@@ -178,8 +187,8 @@
         display: inline-block;
         width: 200px;
         height: auto;
-        position: absolute;
-        right: 50%;
+        margin: 0 auto;
+       
       }
     }
     .l-enchantee{
@@ -202,8 +211,7 @@
       &__header--img{
         width: 200px;
         height: auto;
-        position: absolute;
-        right: 50%;
+        margin: 0 auto;
       }
     }
     .la-palette{
@@ -226,8 +234,7 @@
         &__header--img{
           width: 200px;
           height: auto;
-          position: absolute;
-          right: 50%;
+          margin: 0 auto;
         }
       }
     .le-delice{
@@ -250,8 +257,7 @@
         &__header--img{
           width: 200px;
           height: auto;
-          position: absolute;
-          right: 50%;
+          margin: 0 auto;
         }
       }
     
@@ -322,9 +328,6 @@
       .restro__menu:hover span{
         display: bloc;
       }
-     // .restro__menu--box{
-     //   display: none;
-     // }
       .restro__menu:hover .restro__menu--box{
         display: block;
         transform: translateX(0px);
@@ -351,6 +354,9 @@
           margin: 20px;
           list-style-type: none;
           padding-bottom: 30px;
+          li>i{
+            padding-right: 10px;
+          }
       }
       & form{
           color: black;
@@ -362,7 +368,7 @@
           width: 500px;
           padding: 20px;
           position: relative;
-          background-color:$primary-color;
+          background-color:rgba($primary-color,0.9);
           
       }
       & input{
@@ -426,22 +432,23 @@
           flex-direction: row;
           flex-wrap: wrap;
           box-sizing: border-box;
-        
-
+        }
+        &__element{
+          margin: 20px;
         }        
     } 
     #restaurants{
       width:100%;
     }
     .restaurant-container {
-      width: auto;
+      width:40%;
       height: auto;
       display: flex;
       flex-direction: column;
       margin-bottom: 20px;
       @include chadow-box;
       &--all{
-        width: 100%;
+        width: 90%;
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
@@ -451,7 +458,7 @@
           box-sizing: border-box;
       }   
       &__img{
-        width:300px;
+        width:100%;
         height: auto;
         & img{
           width:100%;
@@ -466,8 +473,19 @@
     footer{
       width: 100%;
       ul{
-
         flex-wrap: wrap;
+        li{
+          margin: 20px;
+        }
+      }
+    }
+    #email{
+      width: 100%;
+      fieldset{
+        width: 90%;
+      }
+      textarea{
+        width: 90%;
       }
     }
   }
@@ -480,6 +498,9 @@
           width: 100%;
           display: flex;
           flex-direction:column;
+        }
+        &__element{
+          width: 80%;
         }        
     } 
     #restaurants{
@@ -515,6 +536,18 @@
       width: 100%;
       display: flex;
       flex-direction: column;
+      li{
+        margin-bottom: 20px;
+      }
+    }
+    #email{
+      width: 100%;
+      fieldset{
+        width: 90%;
+      }
+      textarea{
+        width: 90%;
+      }
     }
   }
   
