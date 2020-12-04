@@ -6,6 +6,9 @@
     margin: 0;
     padding: 0;
   }
+  body {
+    font-family: 'roboto', sans-serif;
+  }
     .logo{
       width: 100%;
       height: 30px;
@@ -57,11 +60,10 @@
         cursor: pointer;
         @include btn;
       }
-    }
-    #btn--main:hover{
-      transform: scale(2);
+      &__size:hover{
+        transform: scale(1.5);
       transition: 2s;
-
+      }
     }
     .indicator{
       width: 100%;
@@ -77,6 +79,7 @@
           margin: 20px;
         }
         &__title{
+          font-weight: bolder;
             padding-left: 20px;
         }
       &__element{
@@ -84,6 +87,7 @@
         @include indicator-dimension;
         @include chadow-box;
         >a{
+          font-weight: bolder;
             color: black;
         }
         >span{
@@ -106,7 +110,7 @@
       color: $primary-color;    
     }
     .indicator__element:hover{
-      background-color: rgba($primary-color,0.3);
+      background-color: rgba($secondary-color,0.3);
     }
     
     #restaurants{
@@ -114,6 +118,9 @@
     margin-left: 20px;
       background-color: $bg-color;
       margin: 30px;
+      h2{
+        font-weight: bolder;
+      }
     }
     .restaurant-container {
       width: 20%;;
@@ -163,6 +170,12 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        & h3{
+          font-weight: bolder;
+        }
+        & p{
+          font-weight: normal;
+        }
       }
       &__texts a{
         text-decoration: none;
@@ -268,10 +281,20 @@
     
     
     .restro{
+      overflow: hidden;
       background-color: $bg-color;
       margin-top: 55%;
       border-radius: 50px 50px 0px 0px;
       padding: 20px;
+      &>h1{
+        font-family:'Shrikhand', cursive ;
+      }
+      &__menu--title{
+        font-weight: 100;
+        margin-bottom: 20px;
+        width: 50px;
+        border-bottom: 3px solid $tertiary-color;
+      }
       &__menu{
           @include chadow-box;
         margin-bottom: 20px;
@@ -286,7 +309,8 @@
         position: relative;
         margin-right: 0;
         cursor: pointer;
-        & h2{
+        & h3{
+          font-weight:bolder;
           font-size: 1em;
           overflow:hidden; 
           white-space: nowrap;
@@ -294,13 +318,15 @@
           margin: 10px 0px 0px 20px;
         }
         & p{
-          font-size: 1em;
+          font-weight: normal;
+          font-size: 0.8em;
           overflow:hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
           margin: 0px 0px 0px 20px;
         }
         & span{
+          font-weight: bolder;
           display: inline-block;
           position: absolute;
           right: 60px;
@@ -340,11 +366,13 @@
     
     
     footer{
+      overflow: hidden;
       width: 100%;
       height: auto;
       background: black;
       color: white;
       & h1{
+        font-family:'Shrikhand', cursive ;
           padding-left: 20px;
       }
       & a{
@@ -443,6 +471,9 @@
     } 
     #restaurants{
       width:100%;
+      &>h2{
+        padding: 20px 0;
+      }
     }
     .restaurant-container {
       width:40%;
@@ -452,7 +483,7 @@
       margin-bottom: 20px;
       @include chadow-box;
       &--all{
-        width: 90%;
+        width: 80%;
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;

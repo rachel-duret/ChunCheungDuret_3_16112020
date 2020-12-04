@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  font-family: 'roboto', sans-serif;
+}
+
 .logo {
   width: 100%;
   height: 30px;
@@ -73,9 +77,9 @@
   color: white;
 }
 
-#btn--main:hover {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+.btn__size:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
   -webkit-transition: 2s;
   transition: 2s;
 }
@@ -110,6 +114,7 @@
 }
 
 .indicator__title {
+  font-weight: bolder;
   padding-left: 20px;
 }
 
@@ -131,6 +136,7 @@
 }
 
 .indicator__element > a {
+  font-weight: bolder;
   color: black;
 }
 
@@ -155,7 +161,7 @@
 }
 
 .indicator__element:hover {
-  background-color: rgba(147, 86, 220, 0.3);
+  background-color: rgba(255, 121, 218, 0.3);
 }
 
 #restaurants {
@@ -163,6 +169,10 @@
   margin-left: 20px;
   background-color: #f2f2f2;
   margin: 30px;
+}
+
+#restaurants h2 {
+  font-weight: bolder;
 }
 
 .restaurant-container {
@@ -239,6 +249,14 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.restaurant-container__texts h3 {
+  font-weight: bolder;
+}
+
+.restaurant-container__texts p {
+  font-weight: normal;
 }
 
 .restaurant-container__texts a {
@@ -376,10 +394,22 @@
 }
 
 .restro {
+  overflow: hidden;
   background-color: #f2f2f2;
   margin-top: 55%;
   border-radius: 50px 50px 0px 0px;
   padding: 20px;
+}
+
+.restro > h1 {
+  font-family: 'Shrikhand', cursive;
+}
+
+.restro__menu--title {
+  font-weight: 100;
+  margin-bottom: 20px;
+  width: 50px;
+  border-bottom: 3px solid #99E2D0;
 }
 
 .restro__menu {
@@ -406,7 +436,8 @@
   cursor: pointer;
 }
 
-.restro__menu h2 {
+.restro__menu h3 {
+  font-weight: bolder;
   font-size: 1em;
   overflow: hidden;
   white-space: nowrap;
@@ -415,7 +446,8 @@
 }
 
 .restro__menu p {
-  font-size: 1em;
+  font-weight: normal;
+  font-size: 0.8em;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -423,6 +455,7 @@
 }
 
 .restro__menu span {
+  font-weight: bolder;
   display: inline-block;
   position: absolute;
   right: 60px;
@@ -465,6 +498,7 @@
 }
 
 footer {
+  overflow: hidden;
   width: 100%;
   height: auto;
   background: black;
@@ -472,6 +506,7 @@ footer {
 }
 
 footer h1 {
+  font-family: 'Shrikhand', cursive;
   padding-left: 20px;
 }
 
@@ -613,6 +648,9 @@ footer textarea {
   #restaurants {
     width: 100%;
   }
+  #restaurants > h2 {
+    padding: 20px 0;
+  }
   .restaurant-container {
     width: 40%;
     height: auto;
@@ -628,7 +666,7 @@ footer textarea {
             box-shadow: -1px 5px 10px rgba(138, 131, 131, 0.5);
   }
   .restaurant-container--all {
-    width: 90%;
+    width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
