@@ -26,7 +26,7 @@
     text-decoration: none;
   }
 }
-@mixin btn{
+@mixin bnt{
   width: 200px;
   height: 40px;
   padding: 10px;
@@ -34,7 +34,7 @@
   border-radius: 40px;
   background:linear-gradient($secondary-color,$primary-color);
   text-align: center;
-  color: white;
+  color:#fff;
 }
 @mixin chadow-box {
   box-shadow:-1px 5px 10px rgba(138, 131, 131, 0.5);

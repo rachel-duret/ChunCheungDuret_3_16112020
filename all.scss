@@ -416,39 +416,7 @@
           li>i{
             padding-right: 10px;
           }
-      }
-      & form{
-          color: black;
-      
-      }
-      & fieldset{
-          display: flex;
-          flex-direction: column;
-          width: 500px;
-          padding: 20px;
-          position: relative;
-          background-color:rgba($primary-color,0.9);
-          
-      }
-      & input{
-        margin-bottom: 5px;
-        text-align: right;
-        background: $bg-color;
-        color: black;
-        position: absolute;
-        left: 60px;
-        display: inline-block;
-        margin-bottom:30px;
-      }
-      & textarea{
-        background: $bg-color;
-        width: 500px;
-        height: 500px;
-        font-size: 1em;
-        color: black;
-        padding: 20px;
-      }
-    
+      } 
     }
     
     #email{
