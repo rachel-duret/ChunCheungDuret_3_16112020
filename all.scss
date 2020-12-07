@@ -191,27 +191,35 @@
       }
     }
     .heart{
-      cursor: pointer;
+      display: flex;
       position: relative;
-      &:focus i{
-        color:rgba($primary-color,0.9)
-      }
-      & .fas fa-heart{
-        display: inline-block;
-       background-color:linear-gradient($secondary-color,$primary-color);
-      }
-      .far fa-heart{
-        display: block;
-       position: absolute;
-       top:0;   
-       transition: 3s;
-       animation-fill-mode: forwards; 
-       opacity: 1;
-       z-index: 100;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      background: none;
+      & i:nth-child(2){
+        position: absolute;
+        background:linear-gradient($primary-color,$secondary-color);
+        -webkit-background-clip: text;
+        color: transparent;
+        transform:translateX(50px);
+      }   
+    }
+    .heart:focus .heart>i:nth-child(1),.heart>i:nth-child(2){
+      display: block;  
+    }
+    .heart:focus i:nth-child(1){
+      transform:translateX(50px) ;
+    }
+    .heart:focus i:nth-child(2){
+     animation: heart .1s forwards;
+    }
+    @keyframes heart{
+      to{
+        transform: translateX(0px);
       }
     }
-  
-
+    
     .la-francaise{
       min-width:300px;
       background-position:left 60px;

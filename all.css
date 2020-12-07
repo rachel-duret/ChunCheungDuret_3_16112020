@@ -274,29 +274,52 @@ body {
 }
 
 .heart {
-  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: none;
 }
 
-.heart:focus i {
-  color: rgba(147, 86, 220, 0.9);
-}
-
-.heart .fas fa-heart {
-  display: inline-block;
-  background-color: linear-gradient(#FF79DA, #9356DC);
-}
-
-.heart .far fa-heart {
-  display: block;
+.heart i:nth-child(2) {
   position: absolute;
-  top: 0;
-  -webkit-transition: 3s;
-  transition: 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 1;
-  z-index: 100;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+.heart:focus .heart > i:nth-child(1), .heart > i:nth-child(2) {
+  display: block;
+}
+
+.heart:focus i:nth-child(1) {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+.heart:focus i:nth-child(2) {
+  -webkit-animation: heart .1s forwards;
+          animation: heart .1s forwards;
+}
+
+@-webkit-keyframes heart {
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes heart {
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 
 .la-francaise {
