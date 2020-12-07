@@ -284,10 +284,11 @@ body {
 
 .heart .fas fa-heart {
   display: inline-block;
-  color: gray;
+  background-color: linear-gradient(#FF79DA, #9356DC);
 }
 
-.heart .fa-heart {
+.heart .far fa-heart {
+  display: block;
   position: absolute;
   top: 0;
   -webkit-transition: 3s;
@@ -295,6 +296,7 @@ body {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 1;
+  z-index: 100;
 }
 
 .la-francaise {
@@ -504,9 +506,6 @@ body {
 .restro__menu h3 {
   font-weight: bolder;
   font-size: 1em;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   margin: 10px 0px 0px 20px;
   -webkit-animation: restro 2s  1s forwards;
           animation: restro 2s  1s forwards;
@@ -515,9 +514,6 @@ body {
 .restro__menu p {
   font-weight: normal;
   font-size: 0.8em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   margin: 0px 0px 0px 20px;
 }
 

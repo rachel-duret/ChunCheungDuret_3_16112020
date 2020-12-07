@@ -198,14 +198,16 @@
       }
       & .fas fa-heart{
         display: inline-block;
-        color:gray;
+       background-color:linear-gradient($secondary-color,$primary-color);
       }
-      .fa-heart{
+      .far fa-heart{
+        display: block;
        position: absolute;
        top:0;   
        transition: 3s;
        animation-fill-mode: forwards; 
        opacity: 1;
+       z-index: 100;
       }
     }
   
@@ -350,19 +352,14 @@
         cursor: pointer;
         & h3{
           font-weight:bolder;
-          font-size: 1em;
-          overflow:hidden; 
-          white-space: nowrap;
-          text-overflow: ellipsis;
+          font-size: 1em;        
           margin: 10px 0px 0px 20px;
           animation: restro 2s  1s forwards;
         }
         & p{
           font-weight: normal;
           font-size: 0.8em;
-          overflow:hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
+         
           margin: 0px 0px 0px 20px;
         }
         & span{
