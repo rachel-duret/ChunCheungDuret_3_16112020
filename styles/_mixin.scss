@@ -35,6 +35,7 @@
   background:linear-gradient($secondary-color,$primary-color);
   text-align: center;
   color:#fff;
+  transform: translateY(-20px);
 }
 @mixin chadow-box {
   box-shadow:-1px 5px 10px rgba(138, 131, 131, 0.5);
