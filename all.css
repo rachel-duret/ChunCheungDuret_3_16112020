@@ -98,7 +98,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #f2f2f2;
 }
 
 .indicator > div {
@@ -116,18 +115,20 @@ body {
 }
 
 .indicator__title {
+  font-family: 'Roboto', sans-serif;
   font-weight: bolder;
   padding-left: 20px;
 }
 
 .indicator__element {
+  font-weight: bold;
   cursor: pointer;
   width: auto;
   height: 30px;
   padding: 10px;
   border: 1px solid transparent;
   border-radius: 20px;
-  background-color: white;
+  background-color: #f2f2f2;
   margin-bottom: 20px;
   -webkit-box-shadow: -1px 5px 10px rgba(138, 131, 131, 0.5);
           box-shadow: -1px 5px 10px rgba(138, 131, 131, 0.5);
@@ -148,6 +149,7 @@ body {
   left: -20px;
   width: 20px;
   height: 20px;
+  color: #fff;
   text-align: center;
   background: #9356DC;
   border-radius: 50%;
@@ -168,9 +170,8 @@ body {
 
 #restaurants {
   min-width: 768px;
-  margin-left: 20px;
   background-color: #f2f2f2;
-  margin: 30px;
+  padding: 20px;
 }
 
 #restaurants h2 {
@@ -775,7 +776,7 @@ body {
 }
 
 .restro__menu:hover span {
-  display: bloc;
+  display: block;
   -webkit-animation: span 2s  forwards;
           animation: span 2s  forwards;
 }
@@ -949,12 +950,10 @@ footer ul li > i {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-sizing: border-box;
