@@ -625,6 +625,7 @@
   
 
   @include tablet-width{
+
     .indicator{
        width: 100%;
         display: flex;
@@ -632,8 +633,7 @@
         >div{
           width: 100%;
           display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
+          flex-direction: column;
           box-sizing: border-box;
         }
         &__element{
@@ -641,20 +641,20 @@
         }        
     } 
     #restaurants{
-      width:100%;
+      max-width: $tablet-screen;
       &>h2{
         padding: 20px 0;
       }
     }
     .restaurant-container {
-      width:40%;
+      width:100%;
       height: auto;
       display: flex;
       flex-direction: column;
       margin-bottom: 20px;
       @include chadow-box;
       &--all{
-        width: 80%;
+        width: 100%;
           display: flex;
           flex-direction: column;
           justify-content: space-around;          

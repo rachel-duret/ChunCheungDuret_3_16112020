@@ -913,12 +913,10 @@ footer ul li > i {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
@@ -926,13 +924,13 @@ footer ul li > i {
     margin: 20px;
   }
   #restaurants {
-    width: 100%;
+    max-width: 768px;
   }
   #restaurants > h2 {
     padding: 20px 0;
   }
   .restaurant-container {
-    width: 40%;
+    width: 100%;
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -946,7 +944,7 @@ footer ul li > i {
             box-shadow: -1px 5px 10px rgba(138, 131, 131, 0.5);
   }
   .restaurant-container--all {
-    width: 80%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
