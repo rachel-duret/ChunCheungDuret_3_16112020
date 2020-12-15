@@ -119,7 +119,7 @@
     }
     
     #restaurants{
-      min-width:$tablet-screen;
+      max-width:$pc-screen;
       background-color: $bg-color;
       padding: 20px;
       h2{
@@ -127,7 +127,7 @@
       }
     }
     .restaurant-container {
-      width: 20%;;
+      width: 20%;
       height: auto;
       border-radius: 20px;
       line-height: 1.2em;
@@ -626,6 +626,9 @@
 
   @include tablet-width{
 
+    #bloc-page{
+      max-width: $tablet-screen;
+    }
     .indicator{
        width: 100%;
         display: flex;
@@ -641,25 +644,28 @@
         }        
     } 
     #restaurants{
+      box-sizing: border-box;
       max-width: $tablet-screen;
       &>h2{
         padding: 20px 0;
       }
     }
     .restaurant-container {
-      width:100%;
+      width:40%;
       height: auto;
       display: flex;
       flex-direction: column;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      margin-top: 30px;
       @include chadow-box;
+      margin: auto;
       &--all{
         width: 100%;
           display: flex;
-          flex-direction: column;
-          justify-content: space-around;          
+          flex-direction: row;
+          flex-wrap: wrap;      
           box-sizing: border-box;
-         margin: 0 auto;
+        
       }   
       &__img{
         width:100%;
@@ -683,15 +689,7 @@
         }
       }
     }
-    #email{
-      width: 100%;
-      fieldset{
-        width: 90%;
-      }
-      textarea{
-        width: 90%;
-      }
-    }
+    
   }
   @include phone-width{
     .indicator{
@@ -762,15 +760,7 @@
         margin-bottom: 20px;
       }
     }
-    #email{
-      width: 100%;
-      fieldset{
-        width: 90%;
-      }
-      textarea{
-        width: 90%;
-      }
-    }
+    
   }
   
  

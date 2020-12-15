@@ -169,7 +169,7 @@ body {
 }
 
 #restaurants {
-  min-width: 768px;
+  max-width: 1020px;
   background-color: #f2f2f2;
   padding: 20px;
 }
@@ -898,6 +898,9 @@ footer ul li > i {
 }
 
 @media all and (min-width: 414px) and (max-width: 768px) {
+  #bloc-page {
+    max-width: 768px;
+  }
   .indicator {
     width: 100%;
     display: -webkit-box;
@@ -924,13 +927,15 @@ footer ul li > i {
     margin: 20px;
   }
   #restaurants {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     max-width: 768px;
   }
   #restaurants > h2 {
     padding: 20px 0;
   }
   .restaurant-container {
-    width: 100%;
+    width: 40%;
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -939,24 +944,25 @@ footer ul li > i {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     -webkit-box-shadow: -1px 5px 10px rgba(138, 131, 131, 0.5);
             box-shadow: -1px 5px 10px rgba(138, 131, 131, 0.5);
+    margin: auto;
   }
   .restaurant-container--all {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    margin: 0 auto;
   }
   .restaurant-container__img {
     width: 100%;
@@ -978,15 +984,6 @@ footer ul li > i {
   }
   footer ul li {
     margin: 20px;
-  }
-  #email {
-    width: 100%;
-  }
-  #email fieldset {
-    width: 90%;
-  }
-  #email textarea {
-    width: 90%;
   }
 }
 
@@ -1079,15 +1076,6 @@ footer ul li > i {
   }
   footer ul li {
     margin-bottom: 20px;
-  }
-  #email {
-    width: 100%;
-  }
-  #email fieldset {
-    width: 90%;
-  }
-  #email textarea {
-    width: 90%;
   }
 }
 /*# sourceMappingURL=all.css.map */
