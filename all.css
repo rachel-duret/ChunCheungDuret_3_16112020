@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+#bolc-page {
+  max-width: 1240px;
+}
+
 body {
   font-family: 'roboto', sans-serif;
 }
@@ -170,7 +174,7 @@ body {
 }
 
 #restaurants {
-  max-width: 1020px;
+  max-width: 1240px;
   background-color: #f2f2f2;
   padding: 20px;
 }
@@ -207,6 +211,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0auto;
 }
 
 .restaurant-container__img {
@@ -723,19 +728,18 @@ body {
   border-right: none;
   height: 6px;
   width: 10px;
-  -webkit-animation: rotate-box 1s 3s;
-          animation: rotate-box 1s 3s;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+}
+
+.checkbox:checked::after :hover {
+  -webkit-animation: rotate-box 1s 3s;
+          animation: rotate-box 1s 3s;
 }
 
 .restro__menu:hover .checkbox:checked::after {
   -webkit-animation: rotate-box 1s 0.5s;
           animation: rotate-box 1s 0.5s;
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
 }
 
 @-webkit-keyframes rotate-box {
