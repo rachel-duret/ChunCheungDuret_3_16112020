@@ -522,11 +522,12 @@
         height:6px;
         width:10px;
         transform:rotate(-45deg);
-        :hover{
-          animation: rotate-box 1s 3s ;
-        }
+       
     }
-    .restro__menu:hover .checkbox{
+    .checkbox :hover{
+      animation: rotate-box 1s 3s ;
+    }
+    .restro__menu:hover .checkbox:checked::after{
       animation: rotate-box 1s 0.5s; 
     }
     @keyframes rotate-box{

@@ -211,7 +211,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0auto;
+  margin: 0 auto;
 }
 
 .restaurant-container__img {
@@ -732,7 +732,7 @@ body {
           transform: rotate(-45deg);
 }
 
-.checkbox:checked::after :hover {
+.checkbox :hover {
   -webkit-animation: rotate-box 1s 3s;
           animation: rotate-box 1s 3s;
 }
