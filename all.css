@@ -267,6 +267,9 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .restaurant-container__texts h3 {
@@ -337,9 +340,6 @@ body {
   background-image: url(" ./images-origin/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  opacity: 0;
-  -webkit-animation: menu-page-head forwards;
-          animation: menu-page-head forwards;
 }
 
 .la-francaise__header {
@@ -373,9 +373,6 @@ body {
   background-image: url(" ./images-origin/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  opacity: 0;
-  -webkit-animation: menu-page-head forwards;
-          animation: menu-page-head forwards;
 }
 
 .l-enchantee__header {
@@ -408,9 +405,6 @@ body {
   background-image: url(" ./images-origin/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  opacity: 0;
-  -webkit-animation: menu-page-head forwards;
-          animation: menu-page-head forwards;
 }
 
 .la-palette__header {
@@ -443,9 +437,6 @@ body {
   background-image: url(" ./images-origin/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  opacity: 0;
-  -webkit-animation: menu-page-head forwards;
-          animation: menu-page-head forwards;
 }
 
 .le-delice__header {
@@ -470,24 +461,6 @@ body {
   width: 200px;
   height: auto;
   margin: 0 auto;
-}
-
-@-webkit-keyframes menu-page-head {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes menu-page-head {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .restro {
@@ -792,8 +765,6 @@ body {
           transform: translateX(0px);
   -webkit-transition: 1s;
   transition: 1s;
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
 }
 
 @-webkit-keyframes span {
@@ -935,6 +906,7 @@ footer ul li > i {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     max-width: 768px;
+    height: auto;
   }
   #restaurants > h2 {
     padding: 20px 0;
@@ -1014,10 +986,10 @@ footer ul li > i {
             flex-direction: column;
   }
   .indicator__element {
-    width: 80%;
+    width: 90%;
   }
   #restaurants {
-    width: 100%;
+    max-width: 414px;
   }
   .restaurant-container {
     width: 300px;
