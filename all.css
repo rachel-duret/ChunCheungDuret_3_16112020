@@ -91,7 +91,7 @@ body {
 }
 
 .indicator {
-  width: 100%;
+  max-width: 1240px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,6 +102,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: auto;
 }
 
 .indicator > div {
@@ -121,7 +122,6 @@ body {
 .indicator__title {
   font-family: 'Roboto', sans-serif;
   font-weight: bolder;
-  padding-left: 20px;
 }
 
 .indicator__element {
@@ -177,6 +177,7 @@ body {
   max-width: 1240px;
   background-color: #f2f2f2;
   padding: 20px;
+  margin: auto;
 }
 
 #restaurants h2 {

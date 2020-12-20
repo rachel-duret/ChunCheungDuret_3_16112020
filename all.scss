@@ -69,10 +69,11 @@
       }
     }
     .indicator{
-       width: 100%;
+      max-width:$pc-screen;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin: auto;
         
         >div{
           width: 100%;
@@ -85,7 +86,7 @@
         &__title{
           font-family: 'Roboto', sans-serif;
           font-weight: bolder;
-            padding-left: 20px;
+          
         }
       &__element{
         font-weight: bold;
@@ -126,6 +127,7 @@
       max-width:$pc-screen;
       background-color: $bg-color;
       padding: 20px;
+      margin: auto;
       h2{
         font-weight: bolder;
       }
