@@ -122,6 +122,7 @@ body {
 .indicator__title {
   font-family: 'Roboto', sans-serif;
   font-weight: bolder;
+  margin-left: 20px;
 }
 
 .indicator__element {
@@ -182,6 +183,7 @@ body {
 
 #restaurants h2 {
   font-weight: bolder;
+  margin-bottom: 30px;
 }
 
 .restaurant-container--group {
@@ -225,7 +227,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 .restaurant-container__img {
