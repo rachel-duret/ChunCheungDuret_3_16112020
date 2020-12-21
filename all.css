@@ -184,8 +184,21 @@ body {
   font-weight: bolder;
 }
 
+.restaurant-container--group {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .restaurant-container {
-  width: 20%;
+  width: 40%;
   height: auto;
   border-radius: 20px;
   line-height: 1.2em;
@@ -707,8 +720,8 @@ body {
 }
 
 .checkbox :hover {
-  -webkit-animation: rotate-box 1s 3s;
-          animation: rotate-box 1s 3s;
+  -webkit-animation: rotate-box 1s;
+          animation: rotate-box 1s;
 }
 
 .restro__menu:hover .checkbox:checked::after {
@@ -912,6 +925,10 @@ footer ul li > i {
   #restaurants > h2 {
     padding: 20px 0;
   }
+  .restaurant-container--group {
+    width: 100%;
+    margin-bottom: 30px;
+  }
   .restaurant-container {
     width: 40%;
     height: auto;
@@ -933,12 +950,10 @@ footer ul li > i {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
@@ -992,6 +1007,15 @@ footer ul li > i {
   #restaurants {
     max-width: 414px;
   }
+  .restaurant-container--group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .restaurant-container {
     width: 300px;
     height: auto;
@@ -1028,14 +1052,14 @@ footer ul li > i {
   .restaurant-container__texts {
     width: 100%;
   }
-  .restro__menu h3 {
+  .restro__menu:hover h3 {
     width: 150px;
     height: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  .restro__menu p {
+  .restro__menu:hover p {
     width: 150px;
     height: 20px;
     overflow: hidden;

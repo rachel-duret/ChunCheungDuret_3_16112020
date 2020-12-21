@@ -132,8 +132,15 @@
         font-weight: bolder;
       }
     }
+    .restaurant-container--group{
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+     
     .restaurant-container {
-      width: 20%;
+      width: 40%;
       height: auto;
       border-radius: 20px;
       line-height: 1.2em;
@@ -514,7 +521,7 @@
        
     }
     .checkbox :hover{
-      animation: rotate-box 1s 3s ;
+      animation: rotate-box 1s ;
     }
     .restro__menu:hover .checkbox:checked::after{
       animation: rotate-box 1s 0.5s; 
@@ -643,6 +650,10 @@
         padding: 20px 0;
       }
     }
+    .restaurant-container--group{
+      width: 100%;
+      margin-bottom: 30px;
+    }
     .restaurant-container {
       width:40%;
       height: auto;
@@ -655,8 +666,8 @@
       &--all{
         width: 100%;
           display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;      
+          flex-direction: column;
+               
           box-sizing: border-box;
         
       }   
@@ -702,6 +713,10 @@
     #restaurants{
         max-width: $phone-screen;
     }
+    .restaurant-container--group{
+      display: flex;
+      flex-direction: column;
+    }
     .restaurant-container {
       width:300px;
       height: auto;
@@ -727,7 +742,7 @@
         width: 100%;
       }
     }  
-    .restro__menu{
+    .restro__menu:hover{
       & h3{
         width: 150px;
         height: 20px;
