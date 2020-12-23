@@ -459,7 +459,9 @@ body {
 }
 
 .la-francaise {
+  max-width: 1240px;
   min-width: 300px;
+  margin: auto;
   background-position: left 60px;
   background-image: url(" ./images-origin/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   background-repeat: no-repeat;
@@ -492,7 +494,9 @@ body {
 }
 
 .l-enchantee {
+  max-width: 1240px;
   min-width: 300px;
+  margin: auto;
   background-position: left 60px;
   background-image: url(" ./images-origin/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
   background-repeat: no-repeat;
@@ -524,7 +528,9 @@ body {
 }
 
 .la-palette {
+  max-width: 1240px;
   min-width: 300px;
+  margin: auto;
   background-position: left 60px;
   background-image: url(" ./images-origin/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-repeat: no-repeat;
@@ -556,7 +562,9 @@ body {
 }
 
 .le-delice {
+  max-width: 1240px;
   min-width: 300px;
+  margin: auto;
   background-position: left 60px;
   background-image: url(" ./images-origin/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   background-repeat: no-repeat;
@@ -635,7 +643,7 @@ body {
   white-space: nowrap;
 }
 
-.restro__menu h4 {
+.restro__menu h3 {
   font-weight: bolder;
   font-size: 1em;
   margin: 10px 20px 0px 20px;
