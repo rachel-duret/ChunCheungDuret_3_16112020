@@ -762,19 +762,14 @@
     }  
     .restro__menu{
       & h3{
-        width: 250px;
-        height: 20px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+       font-size: 2vh;
       }
       & p{
-        width: 250px;
-        height: 20px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        font-size: 2vh;
       }  
+      & span{
+        font-size: 2vh;
+      }
     }
     .restro__menu:hover{
       & h3{
