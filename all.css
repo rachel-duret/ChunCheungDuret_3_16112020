@@ -494,7 +494,7 @@ body {
 .la-francaise__header--img {
   display: inline-block;
   width: 200px;
-  height: auto;
+  height: 30px;
   margin: 0 auto;
 }
 
