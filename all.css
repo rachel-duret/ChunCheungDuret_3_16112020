@@ -88,6 +88,13 @@ body {
   color: #fff;
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+}
+
+.btn__size:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f3cae5), to(#6123ac));
+  background: linear-gradient(#f3cae5, #6123ac);
 }
 
 .indicator {
@@ -476,13 +483,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-top: 20px;
+  margin: 30px;
 }
 
 .la-francaise__header i {
   display: inline-block;
   color: black;
-  padding-left: 20px;
 }
 
 .la-francaise__header--img {
@@ -509,12 +515,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-top: 20px;
+  margin: 30px;
   position: relative;
 }
 
 .l-enchantee__header i {
-  padding-left: 20px;
   display: inline-block;
   color: black;
 }
@@ -543,11 +548,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-top: 20px;
+  margin: 30px;
 }
 
 .la-palette__header i {
-  padding-left: 20px;
   display: inline-block;
   color: black;
 }
@@ -575,12 +579,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-top: 20px;
+  margin: 30px;
   position: relative;
 }
 
 .le-delice__header i {
-  padding-left: 20px;
   display: inline-block;
   color: black;
 }
@@ -601,13 +604,14 @@ body {
   padding: 20px;
 }
 
-.restro > h2 {
+.restro > h1 {
   font-family: 'Shrikhand', cursive;
 }
 
 .restro__menu--title {
+  font-size: 1.2em;
   font-weight: 100;
-  margin-bottom: 20px;
+  margin: 20px;
   width: 50px;
   border-bottom: 3px solid #99E2D0;
 }
@@ -640,8 +644,8 @@ body {
 }
 
 .restro__menu h3 {
-  font-weight: bolder;
-  font-size: 1em;
+  font-weight: 900;
+  font-size: 1.1em;
   margin: 10px 20px 0px 20px;
   -webkit-animation: restro 2s  1s forwards;
           animation: restro 2s  1s forwards;
@@ -1069,8 +1073,11 @@ footer ul li > i {
   }
   #restaurants {
     max-width: 414px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .restaurant-container--group {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1080,7 +1087,7 @@ footer ul li > i {
             flex-direction: column;
   }
   .restaurant-container {
-    width: 300px;
+    width: 100%;
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1094,6 +1101,7 @@ footer ul li > i {
             box-shadow: -1px 5px 10px rgba(138, 131, 131, 0.5);
   }
   .restaurant-container--all {
+    max-width: 414px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1101,7 +1109,7 @@ footer ul li > i {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
+    max-width: 414px;
     margin-bottom: 20px;
   }
   .restaurant-container__img {
@@ -1116,7 +1124,8 @@ footer ul li > i {
     width: 100%;
   }
   .restro__menu h3 {
-    font-size: 2vh;
+    font-weight: 900;
+    font-size: 1em;
   }
   .restro__menu p {
     font-size: 2vh;

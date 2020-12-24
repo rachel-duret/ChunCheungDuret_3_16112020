@@ -68,8 +68,15 @@
       &__size{
         cursor: pointer;
         @include btn;
+        transition: 2s ease;
+       
       }
     }
+    .btn__size:hover{
+      background:linear-gradient(#f3cae5,#6123ac);
+      
+    }
+    
     .indicator{
       box-sizing: border-box;
       margin: auto;
@@ -315,12 +322,11 @@
         position: relative;
         display: flex;
         flex-direction: row;
-        padding-top: 20px;
+        margin: 30px;
       }
       &__header i{
         display: inline-block;
         color: black;
-        padding-left: 20px;
       }
       &__header--img{
         display: inline-block;
@@ -339,11 +345,10 @@
       &__header{
         display: flex;
         flex-direction: row;
-        padding-top: 20px;
+        margin: 30px;
         position: relative;
       }
       &__header i{
-          padding-left: 20px;
           display: inline-block;
         color: black;
       }
@@ -364,10 +369,9 @@
           position: relative;
           display: flex;
           flex-direction: row;
-          padding-top: 20px;
+          margin: 30px;
         }
         &__header i{
-          padding-left: 20px;
           display: inline-block;
           color: black;
         }
@@ -387,11 +391,10 @@
       &__header{
           display: flex;
           flex-direction: row;
-          padding-top: 20px;
+          margin: 30px;
           position: relative;
         }
         &__header i{
-            padding-left: 20px;
             display: inline-block;
           color: black;
         }
@@ -409,12 +412,13 @@
       margin-top: 55%;
       border-radius: 50px 50px 0px 0px;
       padding: 20px;
-      &>h2{
+      &>h1{
         font-family:'Shrikhand', cursive ;
       }
       &__menu--title{
+        font-size: 1.2em;
         font-weight: 100;
-        margin-bottom: 20px;
+        margin: 20px;
         width: 50px;
         border-bottom: 3px solid $tertiary-color;
       }
@@ -436,8 +440,8 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         & h3{
-          font-weight:bolder;
-          font-size: 1em;        
+          font-weight:900;
+          font-size: 1.1em;        
           margin: 10px 20px 0px 20px;
           animation: restro 2s  1s forwards;
           overflow: hidden;
@@ -745,22 +749,25 @@
     } 
     #restaurants{
         max-width: $phone-screen;
+        box-sizing: border-box;
     }
     .restaurant-container--group{
+      width: 100%;
       display: flex;
       flex-direction: column;
     }
     .restaurant-container {
-      width:300px;
+      width: 100%;
       height: auto;
       display: flex;
       flex-direction: column;
       margin-bottom: 20px;
       @include chadow-box;
       &--all{
+        max-width: $phone-screen;
           display: flex;
           flex-direction: column;
-          width: 100%;
+          max-width: $phone-screen;
           margin-bottom: 20px;
       }   
       &__img{
@@ -777,7 +784,8 @@
     }  
     .restro__menu{
       & h3{
-       font-size: 2vh;
+        font-weight: 900;
+       font-size:1em;
       }
       & p{
         font-size: 2vh;
