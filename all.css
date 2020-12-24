@@ -1147,6 +1147,14 @@ footer ul li > i {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+  .checkbox :focus {
+    -webkit-animation: rotate-box 1s;
+            animation: rotate-box 1s;
+  }
+  .restro__menu:focus .checkbox:checked::after {
+    -webkit-animation: rotate-box 1s 0.5s;
+            animation: rotate-box 1s 0.5s;
+  }
   footer ul {
     width: 100%;
     display: -webkit-box;

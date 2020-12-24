@@ -810,6 +810,12 @@
         white-space: nowrap;
       }  
     }
+    .checkbox :focus{
+      animation: rotate-box 1s ;
+    }
+    .restro__menu:focus .checkbox:checked::after{
+      animation: rotate-box 1s 0.5s; 
+    }
     
     footer ul{
       width: 100%;
