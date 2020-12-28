@@ -73,7 +73,7 @@
       }
     }
     .btn__size:hover{
-      background:linear-gradient(#f89bde,#8843dd);
+      background:linear-gradient(#f89bde,#9150e0);
       box-shadow:3px  10px 10px rgba(138, 131, 131, 0.7);
       
     }
@@ -415,6 +415,8 @@
       padding: 20px;
       &>h1{
         font-family:'Shrikhand', cursive ;
+        display: flex;
+        justify-content: space-between;
       }
       &__menu--title{
         font-size: 1.2em;

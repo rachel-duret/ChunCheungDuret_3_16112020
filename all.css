@@ -91,8 +91,8 @@ body {
 }
 
 .btn__size:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f89bde), to(#8843dd));
-  background: linear-gradient(#f89bde, #8843dd);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f89bde), to(#9150e0));
+  background: linear-gradient(#f89bde, #9150e0);
   -webkit-box-shadow: 3px 10px 10px rgba(138, 131, 131, 0.7);
           box-shadow: 3px 10px 10px rgba(138, 131, 131, 0.7);
 }
@@ -606,6 +606,12 @@ body {
 
 .restro > h1 {
   font-family: 'Shrikhand', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .restro__menu--title {
