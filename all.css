@@ -88,13 +88,13 @@ body {
   color: #fff;
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
-  -webkit-transition: 2s ease;
-  transition: 2s ease;
 }
 
 .btn__size:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f3cae5), to(#6123ac));
-  background: linear-gradient(#f3cae5, #6123ac);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f89bde), to(#8843dd));
+  background: linear-gradient(#f89bde, #8843dd);
+  -webkit-box-shadow: 3px 10px 10px rgba(138, 131, 131, 0.7);
+          box-shadow: 3px 10px 10px rgba(138, 131, 131, 0.7);
 }
 
 .indicator {

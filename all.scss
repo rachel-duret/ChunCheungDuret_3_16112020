@@ -68,12 +68,13 @@
       &__size{
         cursor: pointer;
         @include btn;
-        transition: 2s ease;
+       
        
       }
     }
     .btn__size:hover{
-      background:linear-gradient(#f3cae5,#6123ac);
+      background:linear-gradient(#f89bde,#8843dd);
+      box-shadow:3px  10px 10px rgba(138, 131, 131, 0.7);
       
     }
     
